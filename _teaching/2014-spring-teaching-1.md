@@ -12,13 +12,16 @@ This machine learning course is created with Jupyter notebooks that allow you to
 
 
 Lectures
-Lectures can be viewed online as notebooks, as slides (online or PDF), or as videos (hosted on YouTube). They all have the same content. Upon opening the notebooks, you can launch them in Google Colab, or run them locally.
 ======
+
+Lectures can be viewed online as notebooks, as slides (online or PDF), or as videos (hosted on YouTube). They all have the same content. Upon opening the notebooks, you can launch them in Google Colab, or run them locally.
+
 
 
 Labs and Tutorials 
+=======
+
 Download the lab notebooks and solve the questions locally, or launch them in Google Colab or Binder. Please review the relevant tutorials before starting the labs. Solutions will appear towards the end of each lab session.
-======
 
 
 ======
