@@ -27,7 +27,7 @@ author:
   name             : "AISSAM BERRAHOU"
   pronouns         : # example: "she/her"  
   bio              : ""
-  location         : ""
+  location         : #URL
   employer         : "ENSIAS, Mohammed V university"
   uri              : # URL
   email            : "aissam.berrahou@ensias.um5.ac.ma" 
