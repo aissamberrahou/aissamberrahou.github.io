@@ -44,12 +44,12 @@ Download the lab notebooks and solve the questions locally, or launch them in Go
 |:--|:-------------------|------------------|----------------|
 | 1 | Model Evaluation | [Tutorial](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/03%20-%20Model%20Evaluation.ipynb) | [Lab 2](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%202%20-%20Model%20Evaluation%20Solution.ipynb) (Release date: 11 Feb, 12:00)
 | 2 | Regression | [Linear Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireSimple_moindrescarresWithSckitlearn.ipynb) [Polynomial Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionPolynomialWithSckitlearn.ipynb) [Multiple Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireMultiple_Sklearn.ipynb) [Lab](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression.pdf)  | [Sol](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression%20correction.pdf)
-| 4 | KNN                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 5 | SVM                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 6 | Kmeans                 | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 7 | CAH                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 8 | Ensemble Learning      | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 9 | Neural Networks        | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)    | [Youtube] |
+| 4 | KNN                    | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
+| 5 | SVM                    | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
+| 6 | Kmeans                 | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
+| 7 | CAH                    | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
+| 8 | Ensemble Learning      | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
+| 9 | Neural Networks        | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)    | [lab] |
 
 
 ## Background materials
