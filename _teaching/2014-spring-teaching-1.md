@@ -15,7 +15,9 @@ This machine learning course is created with Jupyter notebooks that allow you to
 This machine learning course is created with Jupyter notebooks that allow you to interact with all the machine learning concepts
 and algorithms to understand them better. At the same time, you'll learn how to control these algorithms and use them in practice.
 
-<img width="332" height="332" alt="image" src="https://github.com/user-attachments/assets/343e7ad9-886d-4878-8771-39ee5ede54f4" />
+
+<img width="339" height="346" alt="image" src="https://github.com/user-attachments/assets/f495cf40-1f4e-4173-91d8-f7904866f7ef" />
+
 
 
 ## Lectures
