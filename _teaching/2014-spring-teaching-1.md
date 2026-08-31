@@ -21,15 +21,15 @@ Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in
 
 |   | Notebooks          |     Slides     |    Video   |   
 |:--|:-------------------|----------------|------------|
-| 1 | [Introduction](https://ml-course.github.io/master/notebooks/introduction/)| [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/01%20-%20Introduction.pdf)         | [Youtube] |
-| 2 | [Regression]()           | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/R%C3%A9gression2025.pdf)      | [Youtube] |
+| 1 | [Introduction](https://ml-course.github.io/master/notebooks/introduction/)| [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/01%20-%20Introduction.pdf) | [Youtube] |
+| 2 | [Regression]()           | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/R%C3%A9gression2025.pdf)  | [Youtube] |
 | 3 | [Model Evaluation](https://ml-course.github.io/master/notebooks/model-evaluation)       | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/03%20-%20Model%20Evaluation.pdf)    | [Youtube] |
 | 4 | [KNN](https://ml-course.github.io/master/notebooks/ensemble-learning)  | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
 | 5 | [SVM](https://ml-course.github.io/master/notebooks/ensemble-learning)   | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
 | 6 | [Kmeans](https://ml-course.github.io/master/notebooks/ensemble-learning)   | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
 | 7 | [CAH](https://ml-course.github.io/master/notebooks/ensemble-learning)   | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
 | 8 | [Ensemble Learning](https://ml-course.github.io/master/notebooks/ensemble-learning)   | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 9 | [Data Engineering](https://ml-course.github.io/master/notebooks/data-preprocessing) | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/05%20-%20Data%20Preprocessing.pdf) | [Youtube] |[Youtube](https://www.youtube.com/watch?v=uhHNU8meMSA&list=PLl4kuMJ32K2r2CUKkZSVVxDnjB4NM335-) |
+| 9 | [Data Engineering](https://ml-course.github.io/master/notebooks/data-preprocessing) | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/05%20-%20Data%20Preprocessing.pdf) | [Youtube] |
 | 10 | [Neural Networks](https://ml-course.github.io/master/notebooks/neural-networks)  | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)  | [Youtube] |
 
 
