@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "AISSAM BERRAHOU"
 title_separator          : "-"
 name                     : &name "AISSAM BERRAHOU"
 description              : &description "Aissam BERRAHOU Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,13 +24,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "AISSAM BERRAHOU"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
-  employer         : "Red Brick University"
+  employer         : "ENSIAS, Mohammed V university"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "aissam.berrahou@ensias.um5.ac.ma" 
 
   # Academic websites
   academia         : # URL
