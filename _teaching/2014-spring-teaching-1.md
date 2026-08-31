@@ -19,7 +19,7 @@ and algorithms to understand them better. At the same time, you'll learn how to 
 Lectures can be viewed online as notebooks, as slides (online or PDF), or as videos (hosted on YouTube). They all have the same content.
 Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in Google Colab (or Binder), or run them locally.
 
-|   | Notebooks          |     Slides     |    Video   |   
+|   | Course          |     Slides     |    Video   |   
 |:--|:-------------------|----------------|------------|
 | 1 | [Introduction](https://ml-course.github.io/master/notebooks/introduction/)| [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/01%20-%20Introduction.pdf) | [Youtube] |
 | 2 | [Regression]()           | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/R%C3%A9gression2025.pdf)  | [Youtube] |
@@ -36,7 +36,7 @@ Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in
 ## Labs
 Download the lab notebooks and solve the questions locally, or launch them in Google Colab or Binder. Please review the relevant tutorials *before* starting the labs. Solutions will appear towards the end of each lab session.
 
-|   | Notebooks          |     Tutorials/Labs     |    Solutions   |
+|   | course          |     Tutorials/Labs     |    Solutions   |
 |:--|:-------------------|------------------|----------------|
 | 1 | Regression | [Linear Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireSimple_moindrescarresWithSckitlearn.ipynb) [Polynomial Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionPolynomialWithSckitlearn.ipynb) [Multiple Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireMultiple_Sklearn.ipynb) [Lab](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression.pdf)  | [Sol](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression%20correction.pdf)
 | 2 | [Model Evaluation](https://ml-course.github.io/master/labs/lab-2a-model-evaluation) | [Tutorial](https://ml-course.github.io/master/labs/Lab%202%20-%20Tutorial) | [Lab 2](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%202%20-%20Model%20Evaluation%20Solution.ipynb) (Release date: 11 Feb, 12:00)
