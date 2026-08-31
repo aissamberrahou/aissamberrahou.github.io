@@ -15,6 +15,9 @@ This machine learning course is created with Jupyter notebooks that allow you to
 This machine learning course is created with Jupyter notebooks that allow you to interact with all the machine learning concepts
 and algorithms to understand them better. At the same time, you'll learn how to control these algorithms and use them in practice.
 
+<img width="332" height="332" alt="image" src="https://github.com/user-attachments/assets/343e7ad9-886d-4878-8771-39ee5ede54f4" />
+
+
 ## Lectures
 Lectures can be viewed online as notebooks, as slides (online or PDF), or as videos (hosted on YouTube). They all have the same content.
 Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in Google Colab (or Binder), or run them locally.
