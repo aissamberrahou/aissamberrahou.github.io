@@ -2,7 +2,7 @@
 title: "Machine learning"
 collection: teaching
 type: "Undergraduate course"
-permalink: ""
+permalink: /teaching/2014-spring-teaching-1
 venue: "Ensias, Mohammed V University"
 date: 2021-01-01
 location: "City, Country"
