@@ -33,18 +33,6 @@ Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in
 | 10 | [Neural Networks](https://ml-course.github.io/master/notebooks/neural-networks)  | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)  | [Youtube](https://www.youtube.com/watch?v=CgAMLWZE-yU&list=PLl4kuMJ32K2r2CUKkZSVVxDnjB4NM335-) |
 
 
-<sup>1</sup> The order of the slides in the video is slightly different.
-
-```{admonition} Get your hands dirty
-Retrieve all materials by cloning the <i class="fab fa-github"></i> [GitHub repo](https://ml-course.github.io/master). To run the notebooks locally, see the [prerequisites](https://ml-course.github.io/master/labs/Lab%200%20-%20Prerequisites.html).
-```
-
-```{admonition} Have some feedback?
-:class: tip
-If you notice any issue, or have suggestions or requests, please go the
-<i class="fab fa-github"></i> [issue tracker](https://github.com/ml-course/master/issues/) or directly click on the  <i class="fab fa-github"></i> icon on top of the page and then 'open issue`. We also welcome pull requests :).
-```
-
 ## Labs
 Download the lab notebooks and solve the questions locally, or launch them in Google Colab or Binder. Please review the relevant tutorials *before* starting the labs. Solutions will appear towards the end of each lab session.
 
