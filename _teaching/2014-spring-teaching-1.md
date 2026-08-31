@@ -42,24 +42,15 @@ Download the lab notebooks and solve the questions locally, or launch them in Go
 
 |   | course          |     Tutorials/Labs     |    Solutions   |
 |:--|:-------------------|------------------|----------------|
-| 1 | Regression | [Linear Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireSimple_moindrescarresWithSckitlearn.ipynb) [Polynomial Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionPolynomialWithSckitlearn.ipynb) [Multiple Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireMultiple_Sklearn.ipynb) [Lab](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression.pdf)  | [Sol](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression%20correction.pdf)
-| 2 | [Model Evaluation]() | [Tutorial](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/03%20-%20Model%20Evaluation.ipynb) | [Lab 2](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%202%20-%20Model%20Evaluation%20Solution.ipynb) (Release date: 11 Feb, 12:00)
-| 3 | [Ensembles](https://ml-course.github.io/master/labs/lab-3a-ensembles) <br> [Data engineering](https://ml-course.github.io/master/labs/Lab%203b%20-%20Pipelines) | [Tutorial](https://ml-course.github.io/master/labs/Lab%203%20-%20Tutorial) | [Lab 3a](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%203a%20-%20Ensembles%20Solution.ipynb) <br> [Lab 3b](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%203b%20-%20Pipelines%20Solution.ipynb) (Release date: 25 Feb, 12:00)
-| 4 | [Neural Networks](https://ml-course.github.io/master/labs/lab-4a-neural-networks)  |  [Tutorial](https://ml-course.github.io/master/labs/Lab%204%20-%20Tutorial) | [Lab 4](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%204%20-%20Neural%20Networks%20Solution.ipynb) (Release date: 4 Mar, 12:00)
-| 5 | [Convolutional Neural Networks](https://ml-course.github.io/master/labs/lab-5-convolutional-neural-networks)  | / | [Lab 5](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%205%20-%20Convolutional%20Neural%20Networks%20Solution.ipynb) (Release date: 11 Mar, 12:00)
-| 6 | [Transformers](https://ml-course.github.io/master/labs/lab-6-transformers)<sup>1</sup>  |  [Tutorial](https://ml-course.github.io/master/labs/Lab%206%20-%20Tutorial) | [Lab 6](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%206%20-%20Transformers%20Solution.ipynb) (Release date: 18 Mar, 12:00)
-| 7 | [Finetuning Transformers](https://ml-course.github.io/master/labs/lab-7-finetuning-transformers)  |  | [Lab 7](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%207%20-%20Finetuning%20Transformers%20Solution.ipynb) (Release date: 25 Mar, 12:00)
+| 1 | Model Evaluation | [Tutorial](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/03%20-%20Model%20Evaluation.ipynb) | [Lab 2](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%202%20-%20Model%20Evaluation%20Solution.ipynb) (Release date: 11 Feb, 12:00)
+| 2 | Regression | [Linear Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireSimple_moindrescarresWithSckitlearn.ipynb) [Polynomial Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionPolynomialWithSckitlearn.ipynb) [Multiple Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireMultiple_Sklearn.ipynb) [Lab](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression.pdf)  | [Sol](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression%20correction.pdf)
+| 4 | KNN                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
+| 5 | SVM                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
+| 6 | Kmeans                 | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
+| 7 | CAH                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
+| 8 | Ensemble Learning      | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
+| 9 | Neural Networks        | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)    | [Youtube] |
 
-## Interactive Labs
-You have to be there to really experience these labs :). A mix of history, quizzes, interview questions, in-class competitions and more!
-
-|   | Notebooks          |     Slides     |
-|:--|:-------------------|------------------|
-| 1 | [Linear Models](https://ml-course.github.io/master/labs/interactive-lab-1-linear-models) | [Slides](https://github.com/ML-course/master/blob/master/labs/Interactive%20Lab%201%20-%20Linear%20Models.pdf)
-| 2 | [Model Evaluation](https://ml-course.github.io/master/labs/interactive-lab-2-model-evaluation) | [Slides](https://github.com/ML-course/master/blob/master/labs/Interactive%20Lab%202%20-%20Model%20Evaluation.pdf)
-| 3 | [Preprocessing and Ensembles](https://ml-course.github.io/master/labs/interactive-lab-3-preprocessing-and-ensembles) | [Slides](https://github.com/ML-course/master/blob/master/labs/Interactive%20Lab%203%20-%20Preprocessing%20and%20Ensembles.pdf)
-| 4 | [Neural Networks](https://ml-course.github.io/master/labs/interactive-lab-4-neural-networks) | [Slides](https://github.com/ML-course/master/blob/master/labs/Interactive%20Lab%204%20-%20Neural%20Networks.pdf)
-| 5 | [CNNs & Transformers](https://ml-course.github.io/master/labs/interactive-lab-5-cnns-and-transformers) | [Slides](https://github.com/ML-course/master/blob/master/labs/Interactive%20Lab%205%20-%20CNNs%20and%20Transformers.pdf)
 
 ## Background materials
 ### Tutorials
