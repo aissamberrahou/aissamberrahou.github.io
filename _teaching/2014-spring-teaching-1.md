@@ -16,7 +16,7 @@ This machine learning course is created with Jupyter notebooks that allow you to
 and algorithms to understand them better. At the same time, you'll learn how to control these algorithms and use them in practice.
 
 
-<img width="339" height="346" alt="image" src="https://github.com/user-attachments/assets/f495cf40-1f4e-4173-91d8-f7904866f7ef" />
+<img width="333" height="338" alt="image" src="https://github.com/user-attachments/assets/c4c8b148-8276-48c6-9fd1-a6ce1fca999b" />
 
 
 
