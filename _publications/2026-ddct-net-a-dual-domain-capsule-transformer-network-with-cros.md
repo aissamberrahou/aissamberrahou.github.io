@@ -1,0 +1,13 @@
+---
+title: "DDCT-Net: A Dual-Domain Capsule-Transformer Network with Cross-Domain Attention for Robust Myocardial Infarction Detection"
+collection: publications
+category: manuscripts
+permalink: /publication/2026-ddct-net-a-dual-domain-capsule-transformer-network-with-cros
+date: 2026-01-01
+venue: 'Iranian Journal of Science and Technology - Transactions of Electrical Engineering'
+paperurl: 'https://doi.org/10.1007/s40998-026-01273-2'
+citation: 'Berrahou, Nadia, <b>Berrahou, Aissam</b> (2026). &quot;DDCT-Net: A Dual-Domain Capsule-Transformer Network with Cross-Domain Attention for Robust Myocardial Infarction Detection.&quot; <i>Iranian Journal of Science and Technology - Transactions of Electrical Engineering</i>.'
+---
+Accurate and robust detection of myocardial infarction (MI) from electrocardiogram (ECG) signals is essential for early diagnosis and timely clinical intervention. This study introduces a novel Dual-Domain Capsule Transformer Network (DDCT-Net), designed to jointly model temporal and spectral dependencies within ECG signals through a dual-branch architecture. The Temporal Capsule Branch captures fine-grained morphological variations across cardiac cycles, while the Spectral Transformer Branch encodes frequency-domain representations derived from continuous wavelet scalograms. A novel Cross-Domain Attention Fusion Layer (CDAFL) establishes bidirectional interactions between both domains via a two-stage adaptive cross-attention mechanism, enhancing contextual consistency and discriminative power. Furthermore, an adaptive gating and residual fusion mechanism enables selective integration of the most relevant information across domains. The proposed DDCT-Net was evaluated on the PTB Diagnostic ECG Dataset using single-lead ECG (Lead II). Inter-patient evaluation follows a patient split protocol: all beats from the same subject are assigned to a single fold, guaranteeing no data leakage. To align with clinical practice, record-level performance is reported using probability averaging. The model achieves outstanding intra-patient performance (accuracy 99.80%, precision 99.83%, F1-score 99.80%). In the challenging inter-patient paradigm, it maintains high generalization with record-level accuracy 98.00% and F1-score 98.78%. An ablation study confirms the critical contribution of the cross-domain fusion and adaptive gating modules to this performance improvement. Overall, DDCT-Net provides an efficient and generalizable framework for automated MI detection, setting a new benchmark for cross-domain ECG analysis.
+
+[Read the paper](https://doi.org/10.1007/s40998-026-01273-2)

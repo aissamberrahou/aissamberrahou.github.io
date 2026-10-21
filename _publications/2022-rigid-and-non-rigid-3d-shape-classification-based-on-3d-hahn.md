@@ -1,0 +1,13 @@
+---
+title: "Rigid and non-rigid 3D shape classification based on 3D Hahn moments neural networks model"
+collection: publications
+category: manuscripts
+permalink: /publication/2022-rigid-and-non-rigid-3d-shape-classification-based-on-3d-hahn
+date: 2022-01-01
+venue: 'Multimedia Tools and Applications'
+paperurl: 'https://doi.org/10.1007/s11042-022-12125-6'
+citation: 'Lakhili, Zouhir, El Alami, Abdelmajid, Mesbah, Abderrahim, <b>Berrahou, Aissam</b>, Qjidaa, Hassan (2022). &quot;Rigid and non-rigid 3D shape classification based on 3D Hahn moments neural networks model.&quot; <i>Multimedia Tools and Applications</i>, 81(26), 38067–38090.'
+---
+With the rapid development of 3D technology, 3D object classification has recently become a popular research topic in computer graphics and pattern recognition. Analyzing the shape of 3D models has become a common concern for researchers. A crucial technique for analyzing these 3D shapes is to capture features from 3D models that can sufficiently distinguish their shapes. While the 3D discrete orthogonal moments are powerful for the analysis and representation of 3D objects. It was proved that they have a better feature representation capability than the continuous orthogonal moments. This paper presents a new model for 3D shape classification named 3D Hahn moments neural networks (3DHMNNs) to improve the classification accuracy and decrease the computational complexity of 3D pattern recognition process. The proposed model is derived by introducing 3D Hahn moments as an input layer in neural network, largely utilized in various applications related to the pattern recognition. In fact, the advantages of image moments, especially discrete orthogonal moments have the property to extract relevant features from an object in lower orders and their robustness against image noise. Along with the efficiency of the neural networks, we can construct the proposed robust model. The main purpose of this work is to investigate the classification capabilities of the proposed model on rigid and non-rigid 3D shape datasets. The experiment simulations are conducted on the Articulated of McGill Princeton Shape Benchmark (PSB), SHREC’2011, ModelNet10 and ModelNet40 databases to assess the effectiveness of our proposed model. Two structures of the proposed model are constructed as noted 3DHMNNs6 layers and 3DHMNNs7 layers. The obtained results indicate that the proposed model provide a reasonable performance in terms of classification accuracy by achieving 90.96% on ModelNet10, 83.87% on ModelNet40, 97.66% on SHREC’2011 and over 90.16% on Articulated McGill outperforming other existing methods as well as being more robust under noisy conditions.
+
+[Read the paper](https://doi.org/10.1007/s11042-022-12125-6)
