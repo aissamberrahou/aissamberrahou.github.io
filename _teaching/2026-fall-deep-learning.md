@@ -22,16 +22,16 @@ Lectures are available as slides (PDF, in French) and videos. Each lecture has a
 
 |    | Course                                   | Slides | Video     | Reading |
 |:---|:-----------------------------------------|--------|-----------|---------|
-| 1  | Introduction to deep learning            | [PDF](/files/deep-learning/L01_introduction.pdf) | [Youtube] | [D2L ch. 1](https://d2l.ai/chapter_introduction/index.html) |
-| 2  | Perceptron and multilayer perceptrons    | [PDF](/files/deep-learning/L02_perceptron_mlp.pdf) | [Youtube] | [D2L ch. 5](https://d2l.ai/chapter_multilayer-perceptrons/index.html) |
-| 3  | Backpropagation and automatic differentiation | [PDF](/files/deep-learning/L03_backprop_autodiff.pdf) | [Youtube] | [D2L 5.3](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html) |
-| 4  | Optimization (SGD, momentum, Adam, learning rate schedules) | [PDF](/files/deep-learning/L04_optimisation.pdf) | [Youtube] | [D2L ch. 12](https://d2l.ai/chapter_optimization/index.html) |
-| 5  | Regularization (weight decay, dropout, batch normalization) | [PDF](/files/deep-learning/L05_regularisation.pdf) | [Youtube] | [D2L 3.7](https://d2l.ai/chapter_linear-regression/weight-decay.html), [D2L 5.6](https://d2l.ai/chapter_multilayer-perceptrons/dropout.html) |
-| 6  | Convolutional neural networks (CNN)      | [PDF](/files/deep-learning/L06_cnn.pdf) | [Youtube] | [D2L ch. 7](https://d2l.ai/chapter_convolutional-neural-networks/index.html) |
-| 7  | Modern CNN architectures and transfer learning | [PDF](/files/deep-learning/L07_cnn_modernes_transfert.pdf) | [Youtube] | [D2L ch. 8](https://d2l.ai/chapter_convolutional-modern/index.html) |
-| 8  | Recurrent neural networks (RNN, LSTM, GRU) | [PDF](/files/deep-learning/L08_rnn_lstm_gru.pdf) | [Youtube] | [D2L ch. 9](https://d2l.ai/chapter_recurrent-neural-networks/index.html), [ch. 10](https://d2l.ai/chapter_recurrent-modern/index.html) |
-| 9  | Attention and transformers               | [PDF](/files/deep-learning/L09_attention_transformers.pdf) | [Youtube] | [D2L ch. 11](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html) |
-| 10 | Generative models (autoencoders, VAE, GAN) | [PDF](/files/deep-learning/L10_modeles_generatifs.pdf) | [Youtube] | [D2L ch. 20](https://d2l.ai/chapter_generative-adversarial-networks/index.html) |
+| 1  | Introduction to deep learning            | [PDF](/files/L01_introduction.pdf) | [Youtube] | [D2L ch. 1](https://d2l.ai/chapter_introduction/index.html) |
+| 2  | Perceptron and multilayer perceptrons    | [PDF](/files/L02_perceptron_mlp.pdf) | [Youtube] | [D2L ch. 5](https://d2l.ai/chapter_multilayer-perceptrons/index.html) |
+| 3  | Backpropagation and automatic differentiation | [PDF](/files/L03_backprop_autodiff.pdf) | [Youtube] | [D2L 5.3](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html) |
+| 4  | Optimization (SGD, momentum, Adam, learning rate schedules) | [PDF](/files/L04_optimisation.pdf) | [Youtube] | [D2L ch. 12](https://d2l.ai/chapter_optimization/index.html) |
+| 5  | Regularization (weight decay, dropout, batch normalization) | [PDF](/files/L05_regularisation.pdf) | [Youtube] | [D2L 3.7](https://d2l.ai/chapter_linear-regression/weight-decay.html), [D2L 5.6](https://d2l.ai/chapter_multilayer-perceptrons/dropout.html) |
+| 6  | Convolutional neural networks (CNN)      | [PDF](/files/L06_cnn.pdf) | [Youtube] | [D2L ch. 7](https://d2l.ai/chapter_convolutional-neural-networks/index.html) |
+| 7  | Modern CNN architectures and transfer learning | [PDF](/files/L07_cnn_modernes_transfert.pdf) | [Youtube] | [D2L ch. 8](https://d2l.ai/chapter_convolutional-modern/index.html) |
+| 8  | Recurrent neural networks (RNN, LSTM, GRU) | [PDF](/files/L08_rnn_lstm_gru.pdf) | [Youtube] | [D2L ch. 9](https://d2l.ai/chapter_recurrent-neural-networks/index.html), [ch. 10](https://d2l.ai/chapter_recurrent-modern/index.html) |
+| 9  | Attention and transformers               | [PDF](/files/L09_attention_transformers.pdf) | [Youtube] | [D2L ch. 11](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html) |
+| 10 | Generative models (autoencoders, VAE, GAN) | [PDF](/files/L10_modeles_generatifs.pdf) | [Youtube] | [D2L ch. 20](https://d2l.ai/chapter_generative-adversarial-networks/index.html) |
 
 ### Lecture contents
 1. **Introduction to deep learning** — AI vs. machine learning vs. deep learning, learned features vs. hand-crafted features, history (perceptron, backpropagation, AlexNet, Transformers), the supervised learning setup (data, model, loss, optimizer), train/validation/test split, under- and overfitting, a first Keras network on Fashion-MNIST.
