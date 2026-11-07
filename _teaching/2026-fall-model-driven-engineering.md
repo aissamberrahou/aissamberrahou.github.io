@@ -1,4 +1,5 @@
----
+\---
+
 title: "Model-driven engineering (IDM/MDA)"
 collection: teaching
 type: "Graduate course"
@@ -7,48 +8,55 @@ venue: "Ensias, Mohammed V University"
 date: 2026-09-20
 location: "Rabat, Morocco"
 ---
+
 Model-driven engineering (IDM, *Ingénierie Dirigée par les Modèles*) puts models at the heart of software development: models are built, checked, transformed, and code is generated from them. This course covers metamodelling with EMF/Ecore, constraints with OCL, the OMG's Model-Driven Architecture (CIM, PIM, PDM, PSM), and the three ways of writing model transformations: by template (Acceleo), by programming (Java + EMF API) and by modelling (ATL).
 
 # Welcome
+
 Each notion is followed through a few familiar running examples: a traffic light (structure and state machine), a library (`Library`, `Book`, `Member`, `Loan`) followed from the requirements down to Java, Python and SQL code, an online shop, a company with departments and employees (OCL), and families (`Families2Persons`, ATL).
 
 ## Prerequisites
-- Object-oriented design and UML 2 (class, object, use case and state diagrams)
-- Object-oriented programming in Java
-- Basics of relational databases and XML
+
+* Object-oriented design and UML 2 (class, object, use case and state diagrams)
+* Object-oriented programming in Java
+* Basics of relational databases and XML
 
 ## Tools
-- JDK 17 or later
-- [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/) with EMF and Ecore Tools
-- [Obeo Designer Community](https://www.obeodesigner.com/) / [Sirius](https://eclipse.dev/sirius/) (graphical editors)
-- [Eclipse OCL](https://eclipse.dev/modeling/mdt/ocl/) (OCLinEcore, OCL console)
-- [Acceleo 3.7](https://eclipse.dev/acceleo/) (update site: `https://download.eclipse.org/acceleo/updates/releases/3.7`)
-- [ATL](https://eclipse.dev/atl/)
+
+* JDK 17 or later
+* [Eclipse Modeling Tools](https://www.eclipse.org/downloads/packages/) with EMF and Ecore Tools
+* [Obeo Designer Community](https://www.obeodesigner.com/) / [Sirius](https://eclipse.dev/sirius/) (graphical editors)
+* [Eclipse OCL](https://eclipse.dev/modeling/mdt/ocl/) (OCLinEcore, OCL console)
+* [Acceleo 3.7](https://eclipse.dev/acceleo/) (update site: `https://download.eclipse.org/acceleo/updates/releases/3.7`)
+* [ATL](https://eclipse.dev/atl/)
 
 ## Lectures
-Lectures are available as slides (PDF, in French). The full course notes (in French, 7 chapters with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) are available here: [Course notes (PDF)](/files/idm/Support_IDM.pdf).
 
-|    | Course                                                              | Slides | Course notes |
-|:---|:--------------------------------------------------------------------|--------|--------------|
-| 1  | Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture | [PDF](/files/idm/MDE_Lecture1_2027.pdf) | Ch. 1, 2, 3 |
-| 2  | Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations | [PDF](/files/idm/MDA_Lecture2_2027.pdf) | Ch. 4 |
-| 3  | Model-to-text transformation by template with Acceleo               | [PDF](/files/idm/Acceleo_Lecture3_2027.pdf) | Ch. 5 |
-| 4  | Transformation by programming (Java and the EMF API)                | [PDF](/files/idm/Programmation_Lecture4_2027.pdf) | Ch. 6 |
-| 5  | Model-to-model transformation with ATL                              | [PDF](/files/idm/ATL_Lecture5_2027.pdf) | Ch. 7 |
+Lectures are available as slides (PDF, in French). The full course notes (in French, 5 chapters with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) are available here: [Course notes (PDF)](/files/idm/Support_IDM.pdf).
+
+||Course|Slides|Asseignments|
+|-|-|-|-|
+|1|Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture|[PDF](/files/idm/MDE_Lecture1_2027.pdf)|[PDF](/files/idm/TD_IDM_2027_M0_M3.pdf)|
+|2|Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations|[PDF](/files/idm/MDA_Lecture2_2027.pdf)|[PDF](/files/idm/TD_MDA_2027.pdf)|
+|3|Model-to-text transformation by template with Acceleo|[PDF](/files/idm/MDE_Lecture1_2027.pdf)|[PDF](/files/idm/TD_Acceleo_Library_2027.pdf)|
+|4|Transformation by programming (Java and the EMF API)|[PDF](/files/idm/Programmation_Lecture4_2027.pdf)|[PDF](/files/idm/TD_Programmation_Library_2027.pdf)|
+|5|Model-to-model transformation with ATL|[PDF](/files/idm/ATL_Lecture5_2027.pdf)|[PDF](/files/idm/TD_ATL_Families_2027.pdf)|
 
 ### Lecture contents
+
 1. **Introduction to model-driven engineering** — why "coding first" no longer scales (cost of late errors, business rules scattered in the code), what a model is (representation, simplification, purpose), descriptive vs. prescriptive and contemplative vs. productive models, MDE: definition, benefits and limits, the OMG four-level stack (M0 real world, M1 model, M2 metamodel, M3 MOF/Ecore), "instance of" vs. "conforms to", conformance checking, the same stack in the UML, Java, XML and database worlds, Ecore and XMI.
 2. **Model-Driven Architecture (MDA)** — separating the business from the platform, the formula *PIM + PDM ⇒ PSM ⇒ Code*, CIM (requirements), PIM (platform-independent solution with OCL constraints), PDM (platform description), PSM (Java/JPA and relational), traceability from requirements to code, the six MDA transformations (refinement, projection, migration, code generation, reverse engineering), taxonomy (endogenous/exogenous, horizontal/vertical, M2M/M2T/T2M), the three transformation approaches: by template (XSLT, Acceleo), by programming (Java + EMF) and by modelling (ATL, QVT).
-3. **Code generation by template with Acceleo** — why generate code, the MOFM2T standard, structure of an Acceleo module (`[module]`, `[template]`, `@main`, `[file]`), navigating an Ecore model with OCL, `[for]` and separators, `[if]`, `[let]`, `[query]` (type mapping as a PDM), one file per class, protected areas, complete case study: generating Python classes, an SQL script (primary and foreign keys) and Java classes from `library.ecore`, common errors and good practices.
+3. **Code generation by template with Acceleo** — why generate code, the MOFM2T standard, structure of an Acceleo module (`\[module]`, `\[template]`, `@main`, `\[file]`), navigating an Ecore model with OCL, `\[for]` and separators, `\[if]`, `\[let]`, `\[query]` (type mapping as a PDM), one file per class, protected areas, complete case study: generating Python classes, an SQL script (primary and foreign keys) and Java classes from `library.ecore`, common errors and good practices.
 4. **Transformation by programming** — imperative vs. template-based generation, setting up a Java project with the EMF libraries, loading a model with a `ResourceSet`, from Ecore concepts to the EMF API (`getEClassifiers()`, `getEAttributes()`, `isMany()`, `isContainment()`), writing a generator step by step, `Library2Python`, `Library2SQL` and `Library2Java`, programmed protected areas, PyEcore, model-to-model by programming, template or programming?
 5. **Model-to-model transformation with ATL** — M2M transformations and their place in MDA (PIM → PSM), structure of an ATL module (header, helpers, rules), matched rules (source pattern, filter, target pattern, bindings `<-`), operation and attribute helpers, the three execution phases and automatic resolution through the trace, the `Families2Persons` case study end to end in Eclipse, `Class2Relational`, rules with several target elements, lazy and called rules, common errors, ATL vs. Acceleo vs. Java.
 
 ### Course notes
+
 The course notes, *Ingénierie Dirigée par les Modèles : du modèle au code*, follow the lectures and add two chapters on metamodelling with EMF/Ecore and on OCL, which are practised in the tutorials and labs. Each chapter has a summary, learning objectives, several numbered examples per notion, exercises, a summary table and a quiz.
 
 1. Introduction to model-driven engineering
 2. Metamodelling with EMF and Ecore (EClass, EAttribute, EReference, containment, multiplicities, opposite references, inheritance, `.genmodel` and the generated Java API, XMI, Sirius editors)
-3. The Object Constraint Language (OCL): context and `self`, navigation (1, 0..1, *, reflexive associations, compositions), inheritance and type operations, collections and iterators, invariants, pre/post-conditions, `def`, `derive`, `init`, `body`, OCL at the metamodel level
+3. The Object Constraint Language (OCL): context and `self`, navigation (1, 0..1, \*, reflexive associations, compositions), inheritance and type operations, collections and iterators, invariants, pre/post-conditions, `def`, `derive`, `init`, `body`, OCL at the metamodel level
 4. Model-Driven Architecture (MDA)
 5. Model-to-text transformation by template with Acceleo
 6. Transformation by programming (Java and the EMF API)
@@ -56,26 +64,22 @@ The course notes, *Ingénierie Dirigée par les Modèles : du modèle au code*, 
 
 Appendices: solutions to all exercises and quizzes; cheat sheet (OCL, Acceleo 3, EMF API, ATL) and glossary.
 
-## Tutorials and labs
-Labs are done in Eclipse Modeling Tools. Please review the relevant tutorial *before* the lab session.
+## Labs
 
-|    | Tutorial / Lab                                                         | Handout |
-|:---|:-----------------------------------------------------------------------|---------|
-| 1  | Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor | [Tutorial](/files/idm/Tutorial1_Metamodelling_EMF.pdf) |
-| 2  | Viewpoint specification with Sirius: nodes, edges, styles and an editing palette | [Lab](/files/idm/TP2_Sirius_Viewpoint.pdf) |
-| 3  | Code generation with Acceleo from the `library.ecore` model (Java and SQL) | [Tutorial](/files/idm/Tutorial2_Acceleo_Library.pdf) |
-| 4  | Transformation by programming (Ecore → Python and Java code with the EMF API) | [Tutorial](/files/idm/Tutorial3_Transformation_Programming.pdf) |
-| 5  | Transformation by modelling with ATL: `Families2Persons`               | [Lab](/files/idm/TP3_ATL_Families2Persons.pdf) |
+Labs are done in Eclipse Modeling Tools. 
 
-## Exercises
-|    | Exercise sheet                                      | Exercises | Solutions |
-|:---|:----------------------------------------------------|-----------|-----------|
-| 1  | Modelling levels M0 to M3 and conformance           | [PDF](/files/idm/TD1_IDM.pdf) | [PDF](/files/idm/TD1_IDM_Corrige.pdf) |
-| 2  | From M0 to M2: models, object diagrams and metamodels | [PDF](/files/idm/TD2_IDM_M0_M2.pdf) | [PDF](/files/idm/TD2_IDM_M0_M2_Corrige.pdf) |
+||Lab|Link|
+|-|-|-|
+|1|Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor|[Lab1](/files/idm/TP_IDM_2027_EMF.pdf)|
+|2|Viewpoint specification with Sirius: nodes, edges, styles and an editing palette|[Lab2](/files/idm/TP_MDA_2027.pdf)|
+|3|Code generation with Acceleo from the `library.ecore` model (Java and SQL)|[Lab3](/files/idm/TP_Acceleo_Library_2027.pdf)|
+|4|Transformation by programming (Ecore → Python and Java code with the EMF API)|[Lab4](/files/idm/TP_Programmation_Library_2027.pdf)|
+|5|Transformation by modelling with ATL: `Families2Persons`|[Lab5](/files/idm/TP_ATL_Families_2027.pdf)|
 
-For exam preparation, a collection of revision exercises and past final exams (2 h) with detailed solutions covers the whole course: levels and conformance, Ecore and XMI, OCL, MDA, Acceleo and XSLT, Java + EMF, and ATL: [Exercises, past exams and solutions (PDF)](/files/idm/MDE_MDA_Exercices_Examens_Corriges.pdf).
+## 
 
 ## Background materials
+
 1. [OMG Model Driven Architecture](https://www.omg.org/mda/)
 2. [Eclipse Modeling Framework (EMF)](https://eclipse.dev/modeling/emf/)
 3. [Eclipse OCL](https://eclipse.dev/modeling/mdt/ocl/)
@@ -83,6 +87,7 @@ For exam preparation, a collection of revision exercises and past final exams (2
 5. [ATL transformation language](https://eclipse.dev/atl/)
 6. [Sirius](https://eclipse.dev/sirius/)
 7. [PyEcore](https://github.com/pyecore/pyecore), EMF/Ecore for Python
-8. M. Brambilla, J. Cabot, M. Wimmer, *Model-Driven Software Engineering in Practice*, 2nd ed., Morgan & Claypool, 2017
+8. M. Brambilla, J. Cabot, M. Wimmer, *Model-Driven Software Engineering in Practice*, 2nd ed., Morgan \& Claypool, 2017
 9. D. Steinberg, F. Budinsky, M. Paternostro, E. Merks, *EMF: Eclipse Modeling Framework*, 2nd ed., Addison-Wesley, 2008
 10. J. Warmer, A. Kleppe, *The Object Constraint Language: Getting Your Models Ready for MDA*, 2nd ed., Addison-Wesley, 2003
+
