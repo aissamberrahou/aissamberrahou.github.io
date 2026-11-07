@@ -5,10 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Lecteur de documents — Aissam Berrahou</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
 <style>
   :root { --bar: #2f3640; --bg: #e9ebee; }
   * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; background: var(--bg); font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  html, body { margin: 0; min-height: 100%; background: var(--bg); font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
   body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
   header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
            padding: 8px 14px; background: var(--bar); color: #fff; font-size: 14px; }
@@ -17,77 +19,202 @@
   header .title { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   header button { background: #465160; color: #fff; border: 0; border-radius: 4px; padding: 5px 10px; cursor: pointer; font-size: 14px; }
   header button:hover { background: #57647a; }
-  #pages { padding: 16px 8px 40px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
-  canvas { display: block; max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.25); pointer-events: none; }
+  .pdfonly { display: none; }
+  body.pdf .pdfonly { display: inline-block; }
   #msg { text-align: center; padding: 40px 16px; color: #444; }
+  img, canvas { -webkit-user-drag: none; }
+
+  /* PDF */
+  #pages { padding: 16px 8px 40px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  #pages canvas { display: block; max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.25); pointer-events: none; }
+
+  /* Notebook */
+  #nb { max-width: 980px; margin: 16px auto 60px; background: #fff; padding: 24px 28px; box-shadow: 0 1px 4px rgba(0,0,0,.2);
+        font-size: 15px; line-height: 1.55; color: #1f2328; }
+  #nb .cell { margin: 10px 0; }
+  #nb .md img { max-width: 100%; height: auto; pointer-events: none; }
+  #nb .md table { border-collapse: collapse; margin: 8px 0; }
+  #nb .md th, #nb .md td { border: 1px solid #d0d7de; padding: 4px 10px; }
+  #nb .md code { background: #f3f4f6; padding: 1px 4px; border-radius: 3px; font-size: 90%; }
+  #nb .md blockquote { border-left: 4px solid #d0d7de; margin: 8px 0; padding: 2px 12px; color: #555; }
+  #nb .code { display: flex; gap: 8px; }
+  #nb .prompt { flex: 0 0 64px; text-align: right; font-family: monospace; font-size: 12px; color: #303f9f; padding-top: 9px; }
+  #nb .out .prompt { color: #d84315; }
+  #nb .body { flex: 1; min-width: 0; }
+  #nb pre { margin: 0; padding: 8px 10px; overflow-x: auto; font-size: 13px; line-height: 1.45; }
+  #nb .src pre { background: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 4px; }
+  #nb .out pre { background: transparent; }
+  #nb .out pre.err { background: #fff0f0; color: #a00; }
+  #nb .out img { max-width: min(100%, 680px); height: auto; display: block; pointer-events: none; }
+  #nb .out .html { overflow-x: auto; font-size: 13px; }
+  #nb .out .html table { border-collapse: collapse; }
+  #nb .out .html th, #nb .out .html td { border: 1px solid #e1e4e8; padding: 3px 8px; text-align: right; }
+  @media (max-width: 640px) { #nb { padding: 14px; } #nb .prompt { display: none; } }
+
   @media print { body * { display: none !important; } body::after { content: "L'impression de ce document est désactivée."; display: block; } }
 </style>
 </head>
 <body oncontextmenu="return false;">
 <header>
-  <a href="/teaching/2026-fall-model-driven-engineering">&larr; Retour au cours</a>
+  <a id="back" href="/teaching/">&larr; Retour au cours</a>
   <span class="title" id="title">Chargement…</span>
-  <button id="zoomOut" title="Zoom arrière">&minus;</button>
-  <span id="zoomLabel">100 %</span>
-  <button id="zoomIn" title="Zoom avant">+</button>
+  <button id="zoomOut" class="pdfonly" title="Zoom arrière">&minus;</button>
+  <span id="zoomLabel" class="pdfonly">100 %</span>
+  <button id="zoomIn" class="pdfonly" title="Zoom avant">+</button>
   <span id="pageInfo"></span>
 </header>
 <div id="msg">Chargement du document…</div>
 <div id="pages"></div>
+<div id="nb" style="display:none"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
 <script>
 (function () {
+  // Courses served by this viewer. "encoded" files are stored as .dat and decoded here.
+  var COURSES = {
+    idm: { dir: "/files/idm/", back: "/teaching/2026-fall-model-driven-engineering", encoded: false },
+    ml:  { dir: "/files/ml/",  back: "/teaching/2014-spring-teaching-1",            encoded: false }
+  };
+  var KEY = new TextEncoder().encode("ensias-aissam-berrahou-viewer-2026");
+
   var params = new URLSearchParams(location.search);
+  var course = COURSES[params.get("c") || "idm"];
   var doc = params.get("doc") || "";
+  var type = params.get("type") === "nb" ? "nb" : "pdf";
   var msg = document.getElementById("msg");
-  var pagesEl = document.getElementById("pages");
+  var titleEl = document.getElementById("title");
 
-  // Only plain file names from the course folder are accepted.
-  if (!/^[A-Za-z0-9_\-]+$/.test(doc)) { msg.textContent = "Document introuvable."; document.getElementById("title").textContent = ""; return; }
+  if (!course || !/^[A-Za-z0-9_\-]+$/.test(doc)) { msg.textContent = "Document introuvable."; titleEl.textContent = ""; return; }
+  document.getElementById("back").href = course.back;
+  titleEl.textContent = doc.replace(/_/g, " ");
+  if (type === "pdf") document.body.classList.add("pdf");
 
-  var url = "/files/idm/" + doc + ".pdf";
-  document.getElementById("title").textContent = doc.replace(/_/g, " ");
-  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  var url = course.dir + doc + (course.encoded ? ".dat" : (type === "nb" ? ".ipynb" : ".pdf"));
 
-  var pdf = null, scale = 1.0;
-
-  function render() {
-    pagesEl.innerHTML = "";
-    var width = Math.min(pagesEl.clientWidth - 16, 1000);
-    var dpr = window.devicePixelRatio || 1;
-    var chain = Promise.resolve();
-    for (var i = 1; i <= pdf.numPages; i++) {
-      (function (n) {
-        chain = chain.then(function () { return pdf.getPage(n); }).then(function (page) {
-          var base = page.getViewport({ scale: 1 });
-          var vp = page.getViewport({ scale: (width / base.width) * scale * dpr });
-          var c = document.createElement("canvas");
-          c.width = vp.width; c.height = vp.height;
-          c.style.width = (vp.width / dpr) + "px";
-          pagesEl.appendChild(c);
-          return page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
-        });
-      })(i);
-    }
-    document.getElementById("zoomLabel").textContent = Math.round(scale * 100) + " %";
+  function load() {
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error("not found");
+      return r.arrayBuffer();
+    }).then(function (buf) {
+      var b = new Uint8Array(buf);
+      if (course.encoded) for (var i = 0; i < b.length; i++) b[i] ^= KEY[i % KEY.length];
+      return b;
+    });
   }
 
-  pdfjsLib.getDocument({ url: url, disableAutoFetch: false }).promise.then(function (p) {
-    pdf = p; msg.style.display = "none";
-    document.getElementById("pageInfo").textContent = p.numPages + " pages";
-    render();
-  }).catch(function () { msg.textContent = "Ce document n'est pas encore disponible."; });
+  // ---------- PDF ----------
+  function showPdf(bytes) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    var pagesEl = document.getElementById("pages");
+    var pdf = null, scale = 1.0;
+    function render() {
+      pagesEl.innerHTML = "";
+      var width = Math.min(pagesEl.clientWidth - 16, 1000);
+      var dpr = window.devicePixelRatio || 1;
+      var chain = Promise.resolve();
+      for (var i = 1; i <= pdf.numPages; i++) {
+        (function (n) {
+          chain = chain.then(function () { return pdf.getPage(n); }).then(function (page) {
+            var base = page.getViewport({ scale: 1 });
+            var vp = page.getViewport({ scale: (width / base.width) * scale * dpr });
+            var c = document.createElement("canvas");
+            c.width = vp.width; c.height = vp.height;
+            c.style.width = (vp.width / dpr) + "px";
+            pagesEl.appendChild(c);
+            return page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+          });
+        })(i);
+      }
+      document.getElementById("zoomLabel").textContent = Math.round(scale * 100) + " %";
+    }
+    return pdfjsLib.getDocument({ data: bytes }).promise.then(function (p) {
+      pdf = p; msg.style.display = "none";
+      document.getElementById("pageInfo").textContent = p.numPages + " pages";
+      render();
+      document.getElementById("zoomIn").onclick = function () { if (scale < 2) { scale += 0.25; render(); } };
+      document.getElementById("zoomOut").onclick = function () { if (scale > 0.5) { scale -= 0.25; render(); } };
+      var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(render, 300); });
+    });
+  }
 
-  document.getElementById("zoomIn").onclick = function () { if (pdf && scale < 2) { scale += 0.25; render(); } };
-  document.getElementById("zoomOut").onclick = function () { if (pdf && scale > 0.5) { scale -= 0.25; render(); } };
-  var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(function () { if (pdf) render(); }, 300); });
+  // ---------- Notebook ----------
+  function txt(x) { return Array.isArray(x) ? x.join("") : (x || ""); }
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function stripAnsi(s) { return s.replace(/\x1b\[[0-9;]*m/g, ""); }
+  function clean(html) { return DOMPurify.sanitize(html, { ADD_ATTR: ["target"] }); }
 
-  // Block save / print / view-source shortcuts.
+  function renderMarkdown(src) {
+    // Protect LaTeX from the markdown parser, then let KaTeX render it.
+    var maths = [];
+    src = src.replace(/\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\$[^\$\n]+?\$/g, function (m) {
+      maths.push(m); return "@@MATH" + (maths.length - 1) + "@@";
+    });
+    var html = marked.parse(src);
+    html = html.replace(/@@MATH(\d+)@@/g, function (_, i) { return esc(maths[+i]); });
+    return clean(html);
+  }
+
+  function renderOutput(o) {
+    if (o.output_type === "stream") return "<pre>" + esc(stripAnsi(txt(o.text))) + "</pre>";
+    if (o.output_type === "error") return '<pre class="err">' + esc(stripAnsi((o.traceback || []).join("\n"))) + "</pre>";
+    var d = o.data || {};
+    if (d["image/png"]) return '<img alt="" src="data:image/png;base64,' + txt(d["image/png"]).replace(/\s/g, "") + '">';
+    if (d["image/jpeg"]) return '<img alt="" src="data:image/jpeg;base64,' + txt(d["image/jpeg"]).replace(/\s/g, "") + '">';
+    if (d["image/svg+xml"]) return '<div class="html">' + clean(txt(d["image/svg+xml"])) + "</div>";
+    if (d["text/html"]) return '<div class="html">' + clean(txt(d["text/html"])) + "</div>";
+    if (d["text/latex"]) return '<div class="md">' + esc(txt(d["text/latex"])) + "</div>";
+    if (d["text/plain"]) return "<pre>" + esc(txt(d["text/plain"])) + "</pre>";
+    return "";
+  }
+
+  function showNotebook(bytes) {
+    var nb = JSON.parse(new TextDecoder("utf-8").decode(bytes));
+    var lang = ((nb.metadata || {}).kernelspec || {}).language || "python";
+    var out = [];
+    (nb.cells || []).forEach(function (c) {
+      var src = txt(c.source);
+      if (c.cell_type === "markdown") {
+        out.push('<div class="cell md">' + renderMarkdown(src) + "</div>");
+      } else if (c.cell_type === "code") {
+        var n = c.execution_count == null ? " " : c.execution_count;
+        var code = hljs.getLanguage(lang) ? hljs.highlight(src, { language: lang }).value : esc(src);
+        var h = '<div class="cell"><div class="code src"><div class="prompt">In [' + n + ']:</div><div class="body"><pre><code class="hljs">' + code + "</code></pre></div></div>";
+        var outs = (c.outputs || []).map(renderOutput).join("");
+        if (outs) h += '<div class="code out"><div class="prompt">' + (c.outputs.some(function (o) { return o.output_type === "execute_result"; }) ? "Out [" + n + "]:" : "") + '</div><div class="body">' + outs + "</div></div>";
+        out.push(h + "</div>");
+      } else {
+        out.push("<pre>" + esc(src) + "</pre>");
+      }
+    });
+    var el = document.getElementById("nb");
+    el.innerHTML = out.join("");
+    el.querySelectorAll("a[href]").forEach(function (a) { a.target = "_blank"; a.rel = "noopener"; });
+    renderMathInElement(el, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true }, { left: "\\[", right: "\\]", display: true },
+        { left: "$", right: "$", display: false }, { left: "\\(", right: "\\)", display: false }
+      ],
+      ignoredClasses: ["src", "out"], throwOnError: false
+    });
+    msg.style.display = "none"; el.style.display = "block";
+    document.getElementById("pageInfo").textContent = "Lecture seule";
+  }
+
+  load().then(function (bytes) { return type === "nb" ? showNotebook(bytes) : showPdf(bytes); })
+        .catch(function () { msg.textContent = "Ce document n'est pas encore disponible."; });
+
+  // Block save / print / view-source shortcuts, copying and dragging.
   document.addEventListener("keydown", function (e) {
     var k = (e.key || "").toLowerCase();
-    if ((e.ctrlKey || e.metaKey) && (k === "s" || k === "p" || k === "u")) { e.preventDefault(); }
+    if ((e.ctrlKey || e.metaKey) && (k === "s" || k === "p" || k === "u" || k === "c")) { e.preventDefault(); }
   });
+  document.addEventListener("copy", function (e) { e.preventDefault(); });
   document.addEventListener("dragstart", function (e) { e.preventDefault(); });
 })();
 </script>
