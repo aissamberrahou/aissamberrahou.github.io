@@ -7,76 +7,82 @@ venue: "Ensias, Mohammed V University"
 date: 2021-01-01
 location: "Rabat, Morocco"
 ---
-This machine learning course is created with Jupyter notebooks that allow you to interact with all the machine learning concepts and algorithms to understand them better. At the same time, you’ll learn how to control these algorithms and use them in practice.
 
-
-
-# Welcome
-This machine learning course is created with Jupyter notebooks that allow you to interact with all the machine learning concepts
-and algorithms to understand them better. At the same time, you'll learn how to control these algorithms and use them in practice.
-
+This introductory machine learning course covers the main supervised methods (KNN, linear regression, SVM), how to validate and evaluate a model, and the main clustering methods (K-means, hierarchical agglomerative clustering, DBSCAN). Every lecture comes with a hands-on lab in Python and scikit-learn.
 
 <img width="333" height="338" alt="image" src="https://github.com/user-attachments/assets/c4c8b148-8276-48c6-9fd1-a6ce1fca999b" />
 
+## Description
 
+The course alternates between lectures and labs. Each algorithm is first worked out by hand on a small toy example from the slides (a few flowers, a screening test, a field yield as a function of temperature…), then re-implemented step by step with NumPy, checked against scikit-learn, and finally applied to a real dataset (Iris, Breast Cancer, Diabetes, Wine, `make_moons`). All lectures and labs are in French.
 
-## Lectures
-Lectures can be viewed online as notebooks, as slides (online or PDF), or as videos (hosted on YouTube). They all have the same content.
-Upon opening the notebooks, you can <i class="fas fa-rocket"></i> launch them in Google Colab (or Binder), or run them locally.
+### Prerequisites
 
-|   | Course          |     Slides     |    Video   |   
-|:--|:-------------------|----------------|------------|
-| 1 | Introduction           | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/01%20-%20Introduction.pdf) | [Youtube] |
-| 2 | Model Evaluation       | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/Lecture%20Validation%20et%20%C3%A9valuation.pdf)    | [Youtube] |
-| 3 | Regression             | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/R%C3%A9gression2025.pdf)  | [Youtube] |
-| 4 | KNN                    | [PDF](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/KNN%20version%202025.pdf)  | [Youtube] |
-| 5 | SVM                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 6 | Kmeans                 | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 7 | CAH                    | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 8 | Ensemble Learning      | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [Youtube] |
-| 9 | Neural Networks        | [PDF](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)    | [Youtube] |
+* Python programming (functions, lists, loops)
+* Linear algebra, basic calculus and probability
+* Basic statistics (mean, variance, distances)
 
+### Tools
+
+* Python 3 with [Jupyter](https://jupyter.org/) or [Google Colab](https://colab.research.google.com/)
+* [NumPy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [Matplotlib](https://matplotlib.org/)
+* [scikit-learn](https://scikit-learn.org/) and [SciPy](https://scipy.org/)
+
+## Objectives
+
+By the end of the course, students will be able to:
+
+1. Explain the machine learning workflow and tell supervised learning from unsupervised learning.
+2. Evaluate a model properly: train/test split, k-fold cross-validation, confusion matrix, precision, recall, F1-score, ROC curve and AUC.
+3. Fit a linear regression by least squares and by gradient descent, and assess it with the MSE and R².
+4. Classify with the k-nearest neighbours algorithm and choose *k* by cross-validation.
+5. Train a support vector machine (hard and soft margin, kernel trick) and tune its hyperparameters *C* and γ.
+6. Group data with K-means, hierarchical agglomerative clustering and DBSCAN, and choose the number of clusters (elbow method, silhouette, dendrogram, k-distance plot).
+7. Recognise under- and overfitting and the influence of hyperparameters and feature scaling.
+8. Implement these algorithms from scratch with NumPy and use them in practice with scikit-learn.
+
+## Course
+
+Lectures are available as slides (in French), displayed in a read-only online viewer.
+
+|    | Lecture | Slides |
+|:---|:--------|:-------|
+| 1  | Introduction to machine learning | [Slides](/viewer/?c=ml&doc=Lecture1_Introduction) |
+| 2  | Model validation and evaluation | [Slides](/viewer/?c=ml&doc=Lecture2_Validation) |
+| 3  | Linear regression | [Slides](/viewer/?c=ml&doc=Lecture3_Regression) |
+| 4  | K-nearest neighbours (KNN) | [Slides](/viewer/?c=ml&doc=Lecture4_KNN) |
+| 5  | Support vector machines (SVM) | [Slides](/viewer/?c=ml&doc=Lecture5_SVM) |
+| 6  | Clustering with K-means | [Slides](/viewer/?c=ml&doc=Lecture6_KMeans) |
+| 7  | Hierarchical agglomerative clustering (CAH) | [Slides](/viewer/?c=ml&doc=Lecture7_CAH) |
+| 8  | Density-based clustering (DBSCAN) | *coming soon* |
 
 ## Labs
-Download the lab notebooks and solve the questions locally, or launch them in Google Colab or Binder. Please review the relevant tutorials *before* starting the labs. Solutions will appear towards the end of each lab session.
 
-|   | course          |     Tutorials/Labs     |    Solutions   |
-|:--|:-------------------|------------------|----------------|
-| 1 | Model Evaluation | [Tutorial](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/03%20-%20Model%20Evaluation.ipynb) | [Lab 2](https://github.com/ML-course/master/blob/master/lab_solutions/Lab%202%20-%20Model%20Evaluation%20Solution.ipynb) (Release date: 11 Feb, 12:00)
-| 2 | Regression | [Linear Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireSimple_moindrescarresWithSckitlearn.ipynb) ,  [Polynomial Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionPolynomialWithSckitlearn.ipynb) ,  [Multiple Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TutorialRegressionLineaireMultiple_Sklearn.ipynb) [Lab](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression.pdf)  | [Sol](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/TP%20regression%20correction.pdf)
-| 4 | KNN                    | [Tuto Regression](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/Tutorial_KNN_R%C3%A9gression%20(1).ipynb), [Tuto Classification](https://github.com/aissamberrahou/aissamberrahou.github.io/blob/master/files/Tutorial_KNN_Classification%20(2).ipynb)  | [lab] |
-| 5 | SVM                    | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
-| 6 | Kmeans                 | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
-| 7 | CAH                    | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
-| 8 | Ensemble Learning      | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/04%20-%20Ensemble%20Learning.pdf)  | [lab] |
-| 9 | Neural Networks        | [Tuto](https://github.com/ML-course/master/blob/master/slides_pdf/06%20-%20Neural%20Networks.pdf)    | [lab] |
+Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. Each lab lasts about 2 hours and follows the same structure: learning objectives, theory reminder, a toy example worked out step by step, a case study on a real dataset, the influence of the hyperparameters, three exercises (easy, medium, challenge) with their solutions, and a summary.
 
+|    | Lab | Notebook |
+|:---|:----|:---------|
+| 1  | Introduction to machine learning: NumPy basics, a toy model ŷ = w·x, exploring Iris, a first KNN and a first K-means | [Lab 1](/viewer/?c=ml&doc=TP_1_Introduction&type=nb) |
+| 2  | Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold | [Lab 2](/viewer/?c=ml&doc=TP_2_Validation&type=nb) |
+| 3  | Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting | [Lab 3](/viewer/?c=ml&doc=TP_3_Regression&type=nb) |
+| 4  | K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine | [Lab 4](/viewer/?c=ml&doc=TP_4_KNN&type=nb) |
+| 5  | Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make_moons`, Breast Cancer | [Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb) |
+| 6  | K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n_init` | [Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb) |
+| 7  | Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris | [Lab 7](/viewer/?c=ml&doc=TP_7_CAH&type=nb) |
+| 8  | DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters | [Lab 8](/viewer/?c=ml&doc=TP_8_DBSCAN&type=nb) |
 
-## Background materials
-### Tutorials
-General introductions into using Python for scientific programming and machine learning.
+## References
 
-1. [Python basics](https://automatetheboringstuff.com/3e/)
-2. [Machine learning in Python](https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20(%20PDFDrive.com%20)-min.pdf)
+### Books
 
-### Extra lectures
-Lectures on both basic machine learning techniques (useful for novices to cover any knowledge gaps), as well as additional useful techniques that we couldn't fit into the schedule.
+1. A. Géron, *Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow*, 3rd ed., O'Reilly, 2022
+2. A. Müller, S. Guido, *Introduction to Machine Learning with Python*, O'Reilly, 2016
+3. G. James, D. Witten, T. Hastie, R. Tibshirani, *[An Introduction to Statistical Learning](https://www.statlearning.com/)*, 2nd ed., Springer, 2021 (free online)
+4. M.P. Deisenroth, A.A. Faisal, C.S. Ong, *[Mathematics for Machine Learning](https://mml-book.github.io/)*, Cambridge University Press, 2020 (free online)
 
-1. [Decision trees](https://ml-course.github.io/master/blob/master/xtra/Decision%20Trees.ipynb)
-2. [Nearest Neighbors](https://ml-course.github.io/master/blob/master/xtra/Nearest%20Neighbors.ipynb)
-3. [Data Preprocessing Basics](https://ml-course.github.io/master/blob/master/xtra/Data%20Preprocessing%20Basics.ipynb)
-4. [Kernelization](https://ml-course.github.io/master/blob/master/xtra/Kernelization.ipynb)
-5. [Bayesian Learning](https://ml-course.github.io/master/blob/master/xtra/Bayesian%20Learning.ipynb)
-5. [Automated Machine Learning](https://github.com/ML-course/master/blob/master/xtra/AutoML.pdf)
+### Online resources
 
-### Recommended resources
-These resources help to further deepen your skills, and are well aligned with this course.
-
-1. [Scientific Python Lectures (by J.R. Johansson)](https://github.com/jrjohansson/scientific-python-lectures)
-2. [Mathematics for Machine Learning (by M.P. Deisenroth et al.)](https://mml-book.github.io/book/mml-book.pdf)
-3. [The official PyTorch Tutorial](https://pytorch.org/tutorials/beginner/basics/intro.html)
-4. [fast.ai online course on practical deep learning](https://course.fast.ai/)
-5. [Google Machine Learning crash course](https://developers.google.com/machine-learning/crash-course/ml-intro)
-
-
-
+1. [scikit-learn user guide](https://scikit-learn.org/stable/user_guide.html)
+2. [Python basics (Automate the Boring Stuff)](https://automatetheboringstuff.com/3e/)
+3. [Scientific Python Lectures (J.R. Johansson)](https://github.com/jrjohansson/scientific-python-lectures)
+4. [Google Machine Learning crash course](https://developers.google.com/machine-learning/crash-course)
