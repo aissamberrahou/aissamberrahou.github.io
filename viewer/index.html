@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Lecteur de documents — Aissam Berrahou</title>
+<style>
+  :root { --bar: #2f3640; --bg: #e9ebee; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+  body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  header { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+           padding: 8px 14px; background: var(--bar); color: #fff; font-size: 14px; }
+  header a { color: #cfd8e3; text-decoration: none; }
+  header a:hover { color: #fff; }
+  header .title { flex: 1; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  header button { background: #465160; color: #fff; border: 0; border-radius: 4px; padding: 5px 10px; cursor: pointer; font-size: 14px; }
+  header button:hover { background: #57647a; }
+  #pages { padding: 16px 8px 40px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+  canvas { display: block; max-width: 100%; height: auto; background: #fff; box-shadow: 0 1px 4px rgba(0,0,0,.25); pointer-events: none; }
+  #msg { text-align: center; padding: 40px 16px; color: #444; }
+  @media print { body * { display: none !important; } body::after { content: "L'impression de ce document est désactivée."; display: block; } }
+</style>
+</head>
+<body oncontextmenu="return false;">
+<header>
+  <a href="/teaching/2026-fall-model-driven-engineering">&larr; Retour au cours</a>
+  <span class="title" id="title">Chargement…</span>
+  <button id="zoomOut" title="Zoom arrière">&minus;</button>
+  <span id="zoomLabel">100 %</span>
+  <button id="zoomIn" title="Zoom avant">+</button>
+  <span id="pageInfo"></span>
+</header>
+<div id="msg">Chargement du document…</div>
+<div id="pages"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var doc = params.get("doc") || "";
+  var msg = document.getElementById("msg");
+  var pagesEl = document.getElementById("pages");
+
+  // Only plain file names from the course folder are accepted.
+  if (!/^[A-Za-z0-9_\-]+$/.test(doc)) { msg.textContent = "Document introuvable."; document.getElementById("title").textContent = ""; return; }
+
+  var url = "/files/idm/" + doc + ".pdf";
+  document.getElementById("title").textContent = doc.replace(/_/g, " ");
+  pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+
+  var pdf = null, scale = 1.0;
+
+  function render() {
+    pagesEl.innerHTML = "";
+    var width = Math.min(pagesEl.clientWidth - 16, 1000);
+    var dpr = window.devicePixelRatio || 1;
+    var chain = Promise.resolve();
+    for (var i = 1; i <= pdf.numPages; i++) {
+      (function (n) {
+        chain = chain.then(function () { return pdf.getPage(n); }).then(function (page) {
+          var base = page.getViewport({ scale: 1 });
+          var vp = page.getViewport({ scale: (width / base.width) * scale * dpr });
+          var c = document.createElement("canvas");
+          c.width = vp.width; c.height = vp.height;
+          c.style.width = (vp.width / dpr) + "px";
+          pagesEl.appendChild(c);
+          return page.render({ canvasContext: c.getContext("2d"), viewport: vp }).promise;
+        });
+      })(i);
+    }
+    document.getElementById("zoomLabel").textContent = Math.round(scale * 100) + " %";
+  }
+
+  pdfjsLib.getDocument({ url: url, disableAutoFetch: false }).promise.then(function (p) {
+    pdf = p; msg.style.display = "none";
+    document.getElementById("pageInfo").textContent = p.numPages + " pages";
+    render();
+  }).catch(function () { msg.textContent = "Ce document n'est pas encore disponible."; });
+
+  document.getElementById("zoomIn").onclick = function () { if (pdf && scale < 2) { scale += 0.25; render(); } };
+  document.getElementById("zoomOut").onclick = function () { if (pdf && scale > 0.5) { scale -= 0.25; render(); } };
+  var t; window.addEventListener("resize", function () { clearTimeout(t); t = setTimeout(function () { if (pdf) render(); }, 300); });
+
+  // Block save / print / view-source shortcuts.
+  document.addEventListener("keydown", function (e) {
+    var k = (e.key || "").toLowerCase();
+    if ((e.ctrlKey || e.metaKey) && (k === "s" || k === "p" || k === "u")) { e.preventDefault(); }
+  });
+  document.addEventListener("dragstart", function (e) { e.preventDefault(); });
+})();
+</script>
+</body>
+</html>
