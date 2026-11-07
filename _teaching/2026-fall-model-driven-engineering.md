@@ -44,15 +44,15 @@ By the end of the course, students will be able to:
 
 ## Course
 
-Lectures are available as slides (PDF, in French). The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes (PDF, *coming soon*).
+Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes (PDF, *coming soon*).
 
 |    | Lecture | Slides |
 |:---|:--------|:-------|
-| 1  | Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture | [PDF](/files/idm/MDE_Lecture1_2027.pdf) |
-| 2  | Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations | [PDF](/files/idm/MDA_Lecture2_2027.pdf) |
-| 3  | Model-to-text transformation by template with Acceleo | [PDF](/files/idm/Acceleo_Lecture3_2027_v2.pdf) |
-| 4  | Transformation by programming (Java and the EMF API) | [PDF](/files/idm/Programmation_Lecture4_2027.pdf) |
-| 5  | Model-to-model transformation with ATL | [PDF](/files/idm/ATL_Lecture5_2027.pdf) |
+| 1  | Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture | [PDF](/viewer/?doc=MDE_Lecture1_2027) |
+| 2  | Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations | [PDF](/viewer/?doc=MDA_Lecture2_2027) |
+| 3  | Model-to-text transformation by template with Acceleo | [PDF](/viewer/?doc=Acceleo_Lecture3_2027_v2) |
+| 4  | Transformation by programming (Java and the EMF API) | [PDF](/viewer/?doc=Programmation_Lecture4_2027) |
+| 5  | Model-to-model transformation with ATL | [PDF](/viewer/?doc=ATL_Lecture5_2027) |
 
 ### Lecture contents
 
@@ -80,12 +80,12 @@ Appendices: solutions to all exercises and quizzes; cheat sheet (OCL, Acceleo 3,
 
 |    | Assignment | Link |
 |:---|:-----------|:-----|
-| 1  | Models and metamodels: the M0–M3 levels, conformance | [TD1](/files/idm/TD_IDM_2027_M0_M3.pdf) |
-| 2  | Model-Driven Architecture: from CIM to PSM | [TD2](/files/idm/TD_MDA_2027.pdf) |
-| 3  | Code generation with Acceleo (library case study) | [TD3](/files/idm/TD_Acceleo_Library_2027.pdf) |
-| 4  | MDA and Acceleo: combined exercises | [TD4](/files/idm/TD_MDA_Acceleo_2027.pdf) |
-| 5  | Transformation by programming with the EMF API (library case study) | [TD5](/files/idm/TD_Programmation_Library_2027.pdf) |
-| 6  | Model-to-model transformation with ATL: `Families2Persons` | [TD6](/files/idm/TD_ATL_Families_2027.pdf) |
+| 1  | Models and metamodels: the M0–M3 levels, conformance | [TD1](/viewer/?doc=TD_IDM_2027_M0_M3) |
+| 2  | Model-Driven Architecture: from CIM to PSM | [TD2](/viewer/?doc=TD_MDA_2027) |
+| 3  | Code generation with Acceleo (library case study) | [TD3](/viewer/?doc=TD_Acceleo_Library_2027) |
+| 4  | MDA and Acceleo: combined exercises | [TD4](/viewer/?doc=TD_MDA_Acceleo_2027) |
+| 5  | Transformation by programming with the EMF API (library case study) | [TD5](/viewer/?doc=TD_Programmation_Library_2027) |
+| 6  | Model-to-model transformation with ATL: `Families2Persons` | [TD6](/viewer/?doc=TD_ATL_Families_2027) |
 
 ## Labs
 
@@ -93,7 +93,7 @@ Labs are done in Eclipse Modeling Tools.
 
 |    | Lab | Link |
 |:---|:----|:-----|
-| 1  | Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor | [Lab1](/files/idm/TP_IDM_2027_EMF.pdf) |
+| 1  | Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor | [Lab1](/viewer/?doc=TP_IDM_2027_EMF) |
 | 2  | Viewpoint specification with Sirius: nodes, edges, styles and an editing palette | *coming soon* |
 | 3  | Code generation with Acceleo from the `library.ecore` model (Java and SQL) | *coming soon* |
 | 4  | Transformation by programming (Ecore → Python and Java code with the EMF API) | *coming soon* |
