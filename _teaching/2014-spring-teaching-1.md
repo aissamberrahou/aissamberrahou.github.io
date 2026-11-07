@@ -15,7 +15,7 @@ This introductory machine learning course covers the main supervised methods (KN
 
 ## Description
 
-The course alternates between lectures and labs. Each algorithm is first worked out by hand on a small toy example from the slides (a few flowers, a screening test, a field yield as a function of temperature…), then re-implemented step by step with NumPy, checked against scikit-learn, and finally applied to a real dataset (Iris, Breast Cancer, Diabetes, Wine, `make\_moons`). All lectures and labs are in French.
+The course alternates between lectures and labs. Each algorithm is first worked out by hand on a small toy example from the slides (a few flowers, a screening test, a field yield as a function of temperature…), then re-implemented step by step with NumPy, checked against scikit-learn, and finally applied to a real dataset (Iris, Breast Cancer, Diabetes, Wine, `make\\\_moons`). All lectures and labs are in French.
 
 ### Prerequisites
 
@@ -67,8 +67,8 @@ Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. 
 |2|Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold|[Lab 2](/viewer/?c=ml&doc=TP_2_Validation&type=nb)|
 |3|Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting|[Lab 3](/viewer/?c=ml&doc=TP_3_Regression&type=nb)|
 |4|K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine|[Lab 4](/viewer/?c=ml&doc=TP_4_KNN&type=nb)|
-|5|Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make\_moons`, Breast Cancer|[Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb)|
-|6|K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n\_init`|[Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb)|
+|5|Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make\\\_moons`, Breast Cancer|[Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb)|
+|6|K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n\\\_init`|[Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb)|
 |7|Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris|[Lab 7](/viewer/?c=ml&doc=TP_7_CAH&type=nb)|
 |8|DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters|[Lab 8](/viewer/?c=ml&doc=TP_8_DBSCAN&type=nb)|
 
