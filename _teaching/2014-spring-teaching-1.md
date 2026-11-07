@@ -1,4 +1,5 @@
----
+\---
+
 title: "Machine learning"
 collection: teaching
 type: "Undergraduate course"
@@ -14,7 +15,7 @@ This introductory machine learning course covers the main supervised methods (KN
 
 ## Description
 
-The course alternates between lectures and labs. Each algorithm is first worked out by hand on a small toy example from the slides (a few flowers, a screening test, a field yield as a function of temperature…), then re-implemented step by step with NumPy, checked against scikit-learn, and finally applied to a real dataset (Iris, Breast Cancer, Diabetes, Wine, `make_moons`). All lectures and labs are in French.
+The course alternates between lectures and labs. Each algorithm is first worked out by hand on a small toy example from the slides (a few flowers, a screening test, a field yield as a function of temperature…), then re-implemented step by step with NumPy, checked against scikit-learn, and finally applied to a real dataset (Iris, Breast Cancer, Diabetes, Wine, `make\_moons`). All lectures and labs are in French.
 
 ### Prerequisites
 
@@ -45,31 +46,31 @@ By the end of the course, students will be able to:
 
 Lectures are available as slides (in French), displayed in a read-only online viewer.
 
-|    | Lecture | Slides |
-|:---|:--------|:-------|
-| 1  | Introduction to machine learning | [Slides](/viewer/?c=ml&doc=Lecture1_Introduction) |
-| 2  | Model validation and evaluation | [Slides](/viewer/?c=ml&doc=Lecture2_Validation) |
-| 3  | Linear regression | [Slides](/viewer/?c=ml&doc=Lecture3_Regression) |
-| 4  | K-nearest neighbours (KNN) | [Slides](/viewer/?c=ml&doc=Lecture4_KNN) |
-| 5  | Support vector machines (SVM) | [Slides](/viewer/?c=ml&doc=Lecture5_SVM) |
-| 6  | Clustering with K-means | [Slides](/viewer/?c=ml&doc=Lecture6_KMeans) |
-| 7  | Hierarchical agglomerative clustering (CAH) | [Slides](/viewer/?c=ml&doc=Lecture7_CAH) |
-| 8  | Density-based clustering (DBSCAN) | *coming soon* |
+||Lecture|Slides|
+|-|-|-|
+|1|Introduction to machine learning|[Slides](/viewer/?c=ml&doc=Lecture1_Introduction)|
+|2|Model validation and evaluation|[Slides](/viewer/?c=ml&doc=Lecture2_Validation)|
+|3|Linear regression|[Slides](/viewer/?c=ml&doc=Lecture3_Regression)|
+|4|K-nearest neighbours (KNN)|[Slides](/viewer/?c=ml&doc=Lecture4_KNN)|
+|5|Support vector machines (SVM)|[Slides](/viewer/?c=ml&doc=Lecture5_SVM)|
+|6|Clustering with K-means|[Slides](/viewer/?c=ml&doc=Lecture6_KMeans)|
+|7|Hierarchical agglomerative clustering (CAH)|[Slides](/viewer/?c=ml&doc=Lecture7_CAH)|
+|8|Density-based clustering (DBSCAN)|[Slides](/viewer/?c=ml&doc=Lecture8_DBSCAN)|
 
 ## Labs
 
 Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. Each lab lasts about 2 hours and follows the same structure: learning objectives, theory reminder, a toy example worked out step by step, a case study on a real dataset, the influence of the hyperparameters, three exercises (easy, medium, challenge) with their solutions, and a summary.
 
-|    | Lab | Notebook |
-|:---|:----|:---------|
-| 1  | Introduction to machine learning: NumPy basics, a toy model ŷ = w·x, exploring Iris, a first KNN and a first K-means | [Lab 1](/viewer/?c=ml&doc=TP_1_Introduction&type=nb) |
-| 2  | Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold | [Lab 2](/viewer/?c=ml&doc=TP_2_Validation&type=nb) |
-| 3  | Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting | [Lab 3](/viewer/?c=ml&doc=TP_3_Regression&type=nb) |
-| 4  | K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine | [Lab 4](/viewer/?c=ml&doc=TP_4_KNN&type=nb) |
-| 5  | Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make_moons`, Breast Cancer | [Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb) |
-| 6  | K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n_init` | [Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb) |
-| 7  | Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris | [Lab 7](/viewer/?c=ml&doc=TP_7_CAH&type=nb) |
-| 8  | DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters | [Lab 8](/viewer/?c=ml&doc=TP_8_DBSCAN&type=nb) |
+||Lab|Notebook|
+|-|-|-|
+|1|Introduction to machine learning: NumPy basics, a toy model ŷ = w·x, exploring Iris, a first KNN and a first K-means|[Lab 1](/viewer/?c=ml&doc=TP_1_Introduction&type=nb)|
+|2|Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold|[Lab 2](/viewer/?c=ml&doc=TP_2_Validation&type=nb)|
+|3|Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting|[Lab 3](/viewer/?c=ml&doc=TP_3_Regression&type=nb)|
+|4|K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine|[Lab 4](/viewer/?c=ml&doc=TP_4_KNN&type=nb)|
+|5|Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make\_moons`, Breast Cancer|[Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb)|
+|6|K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n\_init`|[Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb)|
+|7|Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris|[Lab 7](/viewer/?c=ml&doc=TP_7_CAH&type=nb)|
+|8|DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters|[Lab 8](/viewer/?c=ml&doc=TP_8_DBSCAN&type=nb)|
 
 ## References
 
@@ -77,8 +78,8 @@ Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. 
 
 1. A. Géron, *Hands-On Machine Learning with Scikit-Learn, Keras and TensorFlow*, 3rd ed., O'Reilly, 2022
 2. A. Müller, S. Guido, *Introduction to Machine Learning with Python*, O'Reilly, 2016
-3. G. James, D. Witten, T. Hastie, R. Tibshirani, *[An Introduction to Statistical Learning](https://www.statlearning.com/)*, 2nd ed., Springer, 2021 (free online)
-4. M.P. Deisenroth, A.A. Faisal, C.S. Ong, *[Mathematics for Machine Learning](https://mml-book.github.io/)*, Cambridge University Press, 2020 (free online)
+3. G. James, D. Witten, T. Hastie, R. Tibshirani, [*An Introduction to Statistical Learning*](https://www.statlearning.com/), 2nd ed., Springer, 2021 (free online)
+4. M.P. Deisenroth, A.A. Faisal, C.S. Ong, [*Mathematics for Machine Learning*](https://mml-book.github.io/), Cambridge University Press, 2020 (free online)
 
 ### Online resources
 
@@ -86,3 +87,4 @@ Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. 
 2. [Python basics (Automate the Boring Stuff)](https://automatetheboringstuff.com/3e/)
 3. [Scientific Python Lectures (J.R. Johansson)](https://github.com/jrjohansson/scientific-python-lectures)
 4. [Google Machine Learning crash course](https://developers.google.com/machine-learning/crash-course)
+
