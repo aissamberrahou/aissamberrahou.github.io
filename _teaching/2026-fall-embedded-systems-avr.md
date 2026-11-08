@@ -1,6 +1,7 @@
 ---
 title: "Embedded systems: AVR microcontrollers"
 collection: teaching
+order: 4
 type: "Undergraduate course"
 permalink: /teaching/2026-fall-embedded-systems-avr
 venue: "Ensias, Mohammed V University"

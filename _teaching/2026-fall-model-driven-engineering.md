@@ -1,6 +1,7 @@
 ---
 title: "Model-driven engineering (IDM/MDA)"
 collection: teaching
+order: 3
 type: "Graduate course"
 permalink: /teaching/2026-fall-model-driven-engineering
 venue: "Ensias, Mohammed V University"
@@ -44,15 +45,15 @@ By the end of the course, students will be able to:
 
 ## Course
 
-Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes [PDF](/viewer/?doc=support2027).
+Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes [PDF](/viewer/?d=aWRtfHN1cHBvcnQyMDI3fHBkZnxzdXBwb3J0MjAyNw).
 
 |    | Lecture | Slides |
 |:---|:--------|:-------|
-| 1  | Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture | [PDF](/viewer/?doc=MDE_Lecture1_2027) |
-| 2  | Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations | [PDF](/viewer/?doc=MDA_Lecture2_2027) |
-| 3  | Model-to-text transformation by template with Acceleo | [PDF](/viewer/?doc=Acceleo_Lecture3_2027_v2) |
-| 4  | Transformation by programming (Java and the EMF API) | [PDF](/viewer/?doc=Programmation_Lecture4_2027) |
-| 5  | Model-to-model transformation with ATL | [PDF](/viewer/?doc=ATL_Lecture5_2027) |
+| 1  | Introduction to model-driven engineering: models, metamodels and the OMG four-level architecture | [PDF](/viewer/?d=aWRtfE1ERV9MZWN0dXJlMV8yMDI3fHBkZnxMZWN0dXJlIDEg4oCUIEludHJvZHVjdGlvbiB0byBtb2RlbC1kcml2ZW4gZW5naW5lZXJpbmc6IG1vZGVscywgbWV0YW1vZGVscyBhbmQgdGhlIE9NRyBmb3VyLWxldmVsIGFyY2hpdGVjdHVyZQ) |
+| 2  | Model-Driven Architecture (MDA): CIM, PIM, PDM, PSM and model transformations | [PDF](/viewer/?d=aWRtfE1EQV9MZWN0dXJlMl8yMDI3fHBkZnxMZWN0dXJlIDIg4oCUIE1vZGVsLURyaXZlbiBBcmNoaXRlY3R1cmUgKE1EQSk6IENJTSwgUElNLCBQRE0sIFBTTSBhbmQgbW9kZWwgdHJhbnNmb3JtYXRpb25z) |
+| 3  | Model-to-text transformation by template with Acceleo | [PDF](/viewer/?d=aWRtfEFjY2VsZW9fTGVjdHVyZTNfMjAyN192MnxwZGZ8TGVjdHVyZSAzIOKAlCBNb2RlbC10by10ZXh0IHRyYW5zZm9ybWF0aW9uIGJ5IHRlbXBsYXRlIHdpdGggQWNjZWxlbw) |
+| 4  | Transformation by programming (Java and the EMF API) | [PDF](/viewer/?d=aWRtfFByb2dyYW1tYXRpb25fTGVjdHVyZTRfMjAyN3xwZGZ8TGVjdHVyZSA0IOKAlCBUcmFuc2Zvcm1hdGlvbiBieSBwcm9ncmFtbWluZyAoSmF2YSBhbmQgdGhlIEVNRiBBUEkp) |
+| 5  | Model-to-model transformation with ATL | [PDF](/viewer/?d=aWRtfEFUTF9MZWN0dXJlNV8yMDI3fHBkZnxMZWN0dXJlIDUg4oCUIE1vZGVsLXRvLW1vZGVsIHRyYW5zZm9ybWF0aW9uIHdpdGggQVRM) |
 
 ### Lecture contents
 
@@ -80,12 +81,12 @@ Appendices: solutions to all exercises and quizzes; cheat sheet (OCL, Acceleo 3,
 
 |    | Assignment | Link |
 |:---|:-----------|:-----|
-| 1  | Models and metamodels: the M0–M3 levels, conformance | [TD1](/viewer/?doc=TD_IDM_2027_M0_M3) |
-| 2  | Model-Driven Architecture: from CIM to PSM | [TD2](/viewer/?doc=TD_MDA_2027) |
-| 3  | Code generation with Acceleo (library case study) | [TD3](/viewer/?doc=TD_Acceleo_Library_2027) |
-| 4  | MDA and Acceleo: combined exercises | [TD4](/viewer/?doc=TD_MDA_Acceleo_2027) |
-| 5  | Transformation by programming with the EMF API (library case study) | [TD5](/viewer/?doc=TD_Programmation_Library_2027) |
-| 6  | Model-to-model transformation with ATL: `Families2Persons` | [TD6](/viewer/?doc=TD_ATL_Families_2027) |
+| 1  | Models and metamodels: the M0–M3 levels, conformance | [TD1](/viewer/?d=aWRtfFREX0lETV8yMDI3X00wX00zfHBkZnxURCAxIOKAlCBNb2RlbHMgYW5kIG1ldGFtb2RlbHM) |
+| 2  | Model-Driven Architecture: from CIM to PSM | [TD2](/viewer/?d=aWRtfFREX01EQV8yMDI3fHBkZnxURCAyIOKAlCBNb2RlbC1Ecml2ZW4gQXJjaGl0ZWN0dXJl) |
+| 3  | Code generation with Acceleo (library case study) | [TD3](/viewer/?d=aWRtfFREX0FjY2VsZW9fTGlicmFyeV8yMDI3fHBkZnxURCAzIOKAlCBDb2RlIGdlbmVyYXRpb24gd2l0aCBBY2NlbGVvIChsaWJyYXJ5IGNhc2Ugc3R1ZHkp) |
+| 4  | MDA and Acceleo: combined exercises | [TD4](/viewer/?d=aWRtfFREX01EQV9BY2NlbGVvXzIwMjd8cGRmfFREIDQg4oCUIE1EQSBhbmQgQWNjZWxlbw) |
+| 5  | Transformation by programming with the EMF API (library case study) | [TD5](/viewer/?d=aWRtfFREX1Byb2dyYW1tYXRpb25fTGlicmFyeV8yMDI3fHBkZnxURCA1IOKAlCBUcmFuc2Zvcm1hdGlvbiBieSBwcm9ncmFtbWluZyB3aXRoIHRoZSBFTUYgQVBJIChsaWJyYXJ5IGNhc2Ugc3R1ZHkp) |
+| 6  | Model-to-model transformation with ATL: `Families2Persons` | [TD6](/viewer/?d=aWRtfFREX0FUTF9GYW1pbGllc18yMDI3fHBkZnxURCA2IOKAlCBNb2RlbC10by1tb2RlbCB0cmFuc2Zvcm1hdGlvbiB3aXRoIEFUTA) |
 
 ## Labs
 
@@ -93,7 +94,7 @@ Labs are done in Eclipse Modeling Tools.
 
 |    | Lab | Link |
 |:---|:----|:-----|
-| 1  | Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor | [Lab1](/viewer/?doc=TP_IDM_2027_EMF) |
+| 1  | Metamodelling with EMF/Ecore and Obeo Designer: build a metamodel, generate its Java API, create a model (`.xmi`) and a graphical editor | [Lab1](/viewer/?d=aWRtfFRQX0lETV8yMDI3X0VNRnxwZGZ8TGFiIDEg4oCUIE1ldGFtb2RlbGxpbmcgd2l0aCBFTUYvRWNvcmUgYW5kIE9iZW8gRGVzaWduZXI) |
 | 2  | Viewpoint specification with Sirius: nodes, edges, styles and an editing palette | *coming soon* |
 | 3  | Code generation with Acceleo from the `library.ecore` model (Java and SQL) | *coming soon* |
 | 4  | Transformation by programming (Ecore → Python and Java code with the EMF API) | *coming soon* |

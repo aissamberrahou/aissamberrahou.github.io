@@ -1,6 +1,7 @@
 ---
 title: "Deep learning"
 collection: teaching
+order: 2
 type: "Graduate course"
 permalink: /teaching/2026-fall-deep-learning
 venue: "Ensias, Mohammed V University"
@@ -18,20 +19,20 @@ The course is built around Jupyter notebooks so you can experiment with every mo
 - Linear algebra, basic calculus and probability
 
 ## Lectures
-Lectures are available as slides (PDF, in French) and videos. Each lecture has a recommended reading from the free book *Dive into Deep Learning*. The full course notes (in French, 10 chapters with exercises and solutions) are available here: [Course notes (PDF)](/files/deep-learning/Support_DeepLearning.pdf).
+Lectures are available as slides (in French), displayed in a read-only online viewer, and some come with a video. Each lecture has a recommended reading from the free book *Dive into Deep Learning*. The full course notes (in French, 10 chapters with exercises and solutions) are available here: [Course notes](/viewer/?d=ZGx8U3VwcG9ydF9EZWVwTGVhcm5pbmd8cGRmfERlZXAgbGVhcm5pbmcg4oCUIGNvdXJzZSBub3Rlcw).
 
-|    | Course                                   | Slides | Reading |
-|:---|:-----------------------------------------|--------|-----------|
-| 1  | Introduction to deep learning            | [PDF](/files/L01_introduction.pdf) | [D2L ch. 1](https://d2l.ai/chapter_introduction/index.html) |
-| 2  | Perceptron and multilayer perceptrons    | [PDF](/files/L02_perceptron_mlp.pdf) |  [D2L ch. 5](https://d2l.ai/chapter_multilayer-perceptrons/index.html) |
-| 3  | Backpropagation and automatic differentiation | [PDF](/files/L03_backprop_autodiff.pdf) |  [D2L 5.3](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html) |
-| 4  | Optimization (SGD, momentum, Adam, learning rate schedules) | [PDF](/files/L04_optimisation.pdf) |  [D2L ch. 12](https://d2l.ai/chapter_optimization/index.html) |
-| 5  | Regularization (weight decay, dropout, batch normalization) | [PDF](/files/L05_regularisation.pdf) |  [D2L 3.7](https://d2l.ai/chapter_linear-regression/weight-decay.html), [D2L 5.6](https://d2l.ai/chapter_multilayer-perceptrons/dropout.html) |
-| 6  | Convolutional neural networks (CNN)      | [PDF](/files/L06_cnn.pdf) |  [D2L ch. 7](https://d2l.ai/chapter_convolutional-neural-networks/index.html) |
-| 7  | Modern CNN architectures and transfer learning | [PDF](/files/L07_cnn_modernes_transfert.pdf) |  [D2L ch. 8 (Video)](/files/transfer_learning.mp4) |
-| 8  | Recurrent neural networks (RNN, LSTM, GRU) | [PDF](/files/L08_rnn_lstm_gru.pdf) |  [D2L ch. 9](https://d2l.ai/chapter_recurrent-neural-networks/index.html), [ch. 10](https://d2l.ai/chapter_recurrent-modern/index.html) |
-| 9  | Attention and transformers               | [PDF](/files/L09_attention_transformers.pdf) |  [D2L ch. 11](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html) |
-| 10 | Generative models (autoencoders, VAE, GAN) | [PDF](/files/L10_modeles_generatifs.pdf) |  [D2L ch. 20](https://d2l.ai/chapter_generative-adversarial-networks/index.html) |
+|    | Course                                   | Slides | Video | Reading |
+|:---|:-----------------------------------------|--------|-------|-----------|
+| 1  | Introduction to deep learning            | [PDF](/viewer/?d=ZGx8TDAxX2ludHJvZHVjdGlvbnxwZGZ8TGVjdHVyZSAxIOKAlCBJbnRyb2R1Y3Rpb24gdG8gZGVlcCBsZWFybmluZw) | | [D2L ch. 1](https://d2l.ai/chapter_introduction/index.html) |
+| 2  | Perceptron and multilayer perceptrons    | [PDF](/viewer/?d=ZGx8TDAyX3BlcmNlcHRyb25fbWxwfHBkZnxMZWN0dXJlIDIg4oCUIFBlcmNlcHRyb24gYW5kIG11bHRpbGF5ZXIgcGVyY2VwdHJvbnM) | |  [D2L ch. 5](https://d2l.ai/chapter_multilayer-perceptrons/index.html) |
+| 3  | Backpropagation and automatic differentiation | [PDF](/viewer/?d=ZGx8TDAzX2JhY2twcm9wX2F1dG9kaWZmfHBkZnxMZWN0dXJlIDMg4oCUIEJhY2twcm9wYWdhdGlvbiBhbmQgYXV0b21hdGljIGRpZmZlcmVudGlhdGlvbg) | |  [D2L 5.3](https://d2l.ai/chapter_multilayer-perceptrons/backprop.html) |
+| 4  | Optimization (SGD, momentum, Adam, learning rate schedules) | [PDF](/viewer/?d=ZGx8TDA0X29wdGltaXNhdGlvbnxwZGZ8TGVjdHVyZSA0IOKAlCBPcHRpbWl6YXRpb24gKFNHRCwgbW9tZW50dW0sIEFkYW0sIGxlYXJuaW5nIHJhdGUgc2NoZWR1bGVzKQ) | |  [D2L ch. 12](https://d2l.ai/chapter_optimization/index.html) |
+| 5  | Regularization (weight decay, dropout, batch normalization) | [PDF](/viewer/?d=ZGx8TDA1X3JlZ3VsYXJpc2F0aW9ufHBkZnxMZWN0dXJlIDUg4oCUIFJlZ3VsYXJpemF0aW9uICh3ZWlnaHQgZGVjYXksIGRyb3BvdXQsIGJhdGNoIG5vcm1hbGl6YXRpb24p) | |  [D2L 3.7](https://d2l.ai/chapter_linear-regression/weight-decay.html), [D2L 5.6](https://d2l.ai/chapter_multilayer-perceptrons/dropout.html) |
+| 6  | Convolutional neural networks (CNN)      | [PDF](/viewer/?d=ZGx8TDA2X2NubnxwZGZ8TGVjdHVyZSA2IOKAlCBDb252b2x1dGlvbmFsIG5ldXJhbCBuZXR3b3JrcyAoQ05OKQ) | |  [D2L ch. 7](https://d2l.ai/chapter_convolutional-neural-networks/index.html) |
+| 7  | Modern CNN architectures and transfer learning | [PDF](/viewer/?d=ZGx8TDA3X2Nubl9tb2Rlcm5lc190cmFuc2ZlcnR8cGRmfExlY3R1cmUgNyDigJQgTW9kZXJuIENOTiBhcmNoaXRlY3R1cmVzIGFuZCB0cmFuc2ZlciBsZWFybmluZw) | [▶ Transfer learning](/viewer/?d=ZGx8ZGwtdHJhbnNmZXItbGVhcm5pbmd8dmlkZW98TGVjdHVyZSA3IOKAlCBUcmFuc2ZlciBsZWFybmluZyAodmlkZW8p) |  [D2L ch. 8](https://d2l.ai/chapter_convolutional-modern/index.html) |
+| 8  | Recurrent neural networks (RNN, LSTM, GRU) | [PDF](/viewer/?d=ZGx8TDA4X3Jubl9sc3RtX2dydXxwZGZ8TGVjdHVyZSA4IOKAlCBSZWN1cnJlbnQgbmV1cmFsIG5ldHdvcmtzIChSTk4sIExTVE0sIEdSVSk) | |  [D2L ch. 9](https://d2l.ai/chapter_recurrent-neural-networks/index.html), [ch. 10](https://d2l.ai/chapter_recurrent-modern/index.html) |
+| 9  | Attention and transformers               | [PDF](/viewer/?d=ZGx8TDA5X2F0dGVudGlvbl90cmFuc2Zvcm1lcnN8cGRmfExlY3R1cmUgOSDigJQgQXR0ZW50aW9uIGFuZCB0cmFuc2Zvcm1lcnM) | |  [D2L ch. 11](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html) |
+| 10 | Generative models (autoencoders, VAE, GAN) | [PDF](/viewer/?d=ZGx8TDEwX21vZGVsZXNfZ2VuZXJhdGlmc3xwZGZ8TGVjdHVyZSAxMCDigJQgR2VuZXJhdGl2ZSBtb2RlbHMgKGF1dG9lbmNvZGVycywgVkFFLCBHQU4p) | |  [D2L ch. 20](https://d2l.ai/chapter_generative-adversarial-networks/index.html) |
 
 ### Lecture contents
 1. **Introduction to deep learning** — AI vs. machine learning vs. deep learning, learned features vs. hand-crafted features, history (perceptron, backpropagation, AlexNet, Transformers), the supervised learning setup (data, model, loss, optimizer), train/validation/test split, under- and overfitting, a first Keras network on Fashion-MNIST.
@@ -55,7 +56,7 @@ Labs use TensorFlow 2 and its Keras API. Run the notebooks locally or launch the
 | 2  | MLP from scratch with NumPy, then with Keras | [Tutorial](https://www.tensorflow.org/tutorials/quickstart/beginner), [Lab] | [Sol] |
 | 3  | Training a classifier (optimizers, regularization) | [Lab] | [Sol] |
 | 4  | Image classification with a CNN | [Tutorial](https://www.tensorflow.org/tutorials/images/cnn) | [Sol] |
-| 5  | Transfer learning | [Tutorial](https://www.tensorflow.org/tutorials/images/transfer_learning) | [Sol] |
+| 5  | Transfer learning | [Video](/viewer/?d=ZGx8ZGwtdHJhbnNmZXItbGVhcm5pbmd8dmlkZW98VHJhbnNmZXIgbGVhcm5pbmcgKHZpZGVvKQ), [Tutorial](https://www.tensorflow.org/tutorials/images/transfer_learning) | [Sol] |
 | 6  | Sequence modelling with LSTM | [Tutorial](https://www.tensorflow.org/text/tutorials/text_classification_rnn) | [Sol] |
 | 7  | Transformers and attention | [Tutorial](https://www.tensorflow.org/text/tutorials/transformer) | [Sol] |
 | 8  | Autoencoders and generative models | [Tutorial](https://www.tensorflow.org/tutorials/generative/autoencoder) | [Sol] |

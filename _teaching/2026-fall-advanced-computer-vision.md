@@ -1,6 +1,7 @@
 ---
 title: "Advanced computer vision"
 collection: teaching
+order: 6
 type: "Graduate course"
 permalink: /teaching/2026-fall-advanced-computer-vision
 venue: "Ensias, Mohammed V University"

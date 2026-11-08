@@ -1,6 +1,7 @@
 ---
 title: "Machine learning"
 collection: teaching
+order: 1
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Ensias, Mohammed V University"
@@ -47,14 +48,14 @@ Lectures are available as slides (in French), displayed in a read-only online vi
 
 ||Lecture|Slides|
 |-|-|-|
-|1|Introduction to machine learning|[Slides](/viewer/?c=ml&doc=Lecture1_Introduction)|
-|2|Model validation and evaluation|[Slides](/viewer/?c=ml&doc=Lecture2_Validation)|
-|3|Linear regression|[Slides](/viewer/?c=ml&doc=Lecture3_Regression)|
-|4|K-nearest neighbours (KNN)|[Slides](/viewer/?c=ml&doc=Lecture4_KNN)|
-|5|Support vector machines (SVM)|[Slides](/viewer/?c=ml&doc=Lecture5_SVM)|
-|6|Clustering with K-means|[Slides](/viewer/?c=ml&doc=Lecture6_KMeans)|
-|7|Hierarchical agglomerative clustering (CAH)|[Slides](/viewer/?c=ml&doc=Lecture7_CAH)|
-|8|Density-based clustering (DBSCAN)|[Slides](/viewer/?c=ml&doc=Lecture8_DBSCAN)|
+|1|Introduction to machine learning|[Slides](/viewer/?d=bWx8TGVjdHVyZTFfSW50cm9kdWN0aW9ufHBkZnxMZWN0dXJlIDEg4oCUIEludHJvZHVjdGlvbiB0byBtYWNoaW5lIGxlYXJuaW5n)|
+|2|Model validation and evaluation|[Slides](/viewer/?d=bWx8TGVjdHVyZTJfVmFsaWRhdGlvbnxwZGZ8TGVjdHVyZSAyIOKAlCBNb2RlbCB2YWxpZGF0aW9uIGFuZCBldmFsdWF0aW9u)|
+|3|Linear regression|[Slides](/viewer/?d=bWx8TGVjdHVyZTNfUmVncmVzc2lvbnxwZGZ8TGVjdHVyZSAzIOKAlCBMaW5lYXIgcmVncmVzc2lvbg)|
+|4|K-nearest neighbours (KNN)|[Slides](/viewer/?d=bWx8TGVjdHVyZTRfS05OfHBkZnxMZWN0dXJlIDQg4oCUIEstbmVhcmVzdCBuZWlnaGJvdXJzIChLTk4p)|
+|5|Support vector machines (SVM)|[Slides](/viewer/?d=bWx8TGVjdHVyZTVfU1ZNfHBkZnxMZWN0dXJlIDUg4oCUIFN1cHBvcnQgdmVjdG9yIG1hY2hpbmVzIChTVk0p)|
+|6|Clustering with K-means|[Slides](/viewer/?d=bWx8TGVjdHVyZTZfS01lYW5zfHBkZnxMZWN0dXJlIDYg4oCUIENsdXN0ZXJpbmcgd2l0aCBLLW1lYW5z)|
+|7|Hierarchical agglomerative clustering (CAH)|[Slides](/viewer/?d=bWx8TGVjdHVyZTdfQ0FIfHBkZnxMZWN0dXJlIDcg4oCUIEhpZXJhcmNoaWNhbCBhZ2dsb21lcmF0aXZlIGNsdXN0ZXJpbmcgKENBSCk)|
+|8|Density-based clustering (DBSCAN)|[Slides](/viewer/?d=bWx8TGVjdHVyZThfREJTQ0FOfHBkZnxMZWN0dXJlIDgg4oCUIERlbnNpdHktYmFzZWQgY2x1c3RlcmluZyAoREJTQ0FOKQ)|
 
 ## Labs
 
@@ -62,14 +63,14 @@ Labs are Jupyter notebooks (in French), displayed in a read-only online viewer. 
 
 ||Lab|Notebook|
 |-|-|-|
-|1|Introduction to machine learning: NumPy basics, a toy model ŷ = w·x, exploring Iris, a first KNN and a first K-means|[Lab 1](/viewer/?c=ml&doc=TP_1_Introduction&type=nb)|
-|2|Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold|[Lab 2](/viewer/?c=ml&doc=TP_2_Validation&type=nb)|
-|3|Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting|[Lab 3](/viewer/?c=ml&doc=TP_3_Regression&type=nb)|
-|4|K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine|[Lab 4](/viewer/?c=ml&doc=TP_4_KNN&type=nb)|
-|5|Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make_moons`, Breast Cancer|[Lab 5](/viewer/?c=ml&doc=TP_5_SVM&type=nb)|
-|6|K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n_init`|[Lab 6](/viewer/?c=ml&doc=TP_6_KMeans&type=nb)|
-|7|Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris|[Lab 7](/viewer/?c=ml&doc=TP_7_CAH&type=nb)|
-|8|DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters|[Lab 8](/viewer/?c=ml&doc=TP_8_DBSCAN&type=nb)|
+|1|Introduction to machine learning: NumPy basics, a toy model ŷ = w·x, exploring Iris, a first KNN and a first K-means|[Lab 1](/viewer/?d=bWx8VFBfMV9JbnRyb2R1Y3Rpb258bmJ8TGFiIDEg4oCUIEludHJvZHVjdGlvbiB0byBtYWNoaW5lIGxlYXJuaW5n)|
+|2|Validation and evaluation: metrics by hand, imbalanced classes, ROC curve step by step, hold-out and k-fold on Breast Cancer, decision threshold|[Lab 2](/viewer/?d=bWx8VFBfMl9WYWxpZGF0aW9ufG5ifExhYiAyIOKAlCBWYWxpZGF0aW9uIGFuZCBldmFsdWF0aW9u)|
+|3|Linear regression: least squares by hand, gradient descent, simple and multiple regression on Diabetes, residuals, polynomial overfitting|[Lab 3](/viewer/?d=bWx8VFBfM19SZWdyZXNzaW9ufG5ifExhYiAzIOKAlCBMaW5lYXIgcmVncmVzc2lvbg)|
+|4|K-nearest neighbours: distances and vote, Iris, choosing *k* by cross-validation, decision boundaries, scaling on Wine|[Lab 4](/viewer/?d=bWx8VFBfNF9LTk58bmJ8TGFiIDQg4oCUIEstbmVhcmVzdCBuZWlnaGJvdXJz)|
+|5|Support vector machines: hyperplane and margin, soft margin and *C*, kernel trick, RBF kernel on `make_moons`, Breast Cancer|[Lab 5](/viewer/?d=bWx8VFBfNV9TVk18bmJ8TGFiIDUg4oCUIFN1cHBvcnQgdmVjdG9yIG1hY2hpbmVz)|
+|6|K-means: the algorithm step by step, local minima, elbow method and silhouette on Iris, `init` and `n_init`|[Lab 6](/viewer/?d=bWx8VFBfNl9LTWVhbnN8bmJ8TGFiIDYg4oCUIEstbWVhbnM)|
+|7|Hierarchical agglomerative clustering: distance matrix, linkage criteria, dendrogram and cut, Iris|[Lab 7](/viewer/?d=bWx8VFBfN19DQUh8bmJ8TGFiIDcg4oCUIEhpZXJhcmNoaWNhbCBhZ2dsb21lcmF0aXZlIGNsdXN0ZXJpbmc)|
+|8|DBSCAN: ε-neighbourhoods, core, border and noise points, choosing ε with the k-distance plot, non-convex clusters|[Lab 8](/viewer/?d=bWx8VFBfOF9EQlNDQU58bmJ8TGFiIDgg4oCUIERCU0NBTg)|
 
 ## References
 
