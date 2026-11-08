@@ -28,7 +28,7 @@ Lectures are available as slides (PDF, in French) and videos. Each lecture has a
 | 4  | Optimization (SGD, momentum, Adam, learning rate schedules) | [PDF](/files/L04_optimisation.pdf) |  [D2L ch. 12](https://d2l.ai/chapter_optimization/index.html) |
 | 5  | Regularization (weight decay, dropout, batch normalization) | [PDF](/files/L05_regularisation.pdf) |  [D2L 3.7](https://d2l.ai/chapter_linear-regression/weight-decay.html), [D2L 5.6](https://d2l.ai/chapter_multilayer-perceptrons/dropout.html) |
 | 6  | Convolutional neural networks (CNN)      | [PDF](/files/L06_cnn.pdf) |  [D2L ch. 7](https://d2l.ai/chapter_convolutional-neural-networks/index.html) |
-| 7  | Modern CNN architectures and transfer learning | [PDF](/files/L07_cnn_modernes_transfert.pdf) |  [D2L ch. 8](https://d2l.ai/chapter_convolutional-modern/index.html) |
+| 7  | Modern CNN architectures and transfer learning | [PDF](/files/L07_cnn_modernes_transfert.pdf) |  [D2L ch. 8 (Video)](/files/transfer_learning.mp4) |
 | 8  | Recurrent neural networks (RNN, LSTM, GRU) | [PDF](/files/L08_rnn_lstm_gru.pdf) |  [D2L ch. 9](https://d2l.ai/chapter_recurrent-neural-networks/index.html), [ch. 10](https://d2l.ai/chapter_recurrent-modern/index.html) |
 | 9  | Attention and transformers               | [PDF](/files/L09_attention_transformers.pdf) |  [D2L ch. 11](https://d2l.ai/chapter_attention-mechanisms-and-transformers/index.html) |
 | 10 | Generative models (autoencoders, VAE, GAN) | [PDF](/files/L10_modeles_generatifs.pdf) |  [D2L ch. 20](https://d2l.ai/chapter_generative-adversarial-networks/index.html) |
