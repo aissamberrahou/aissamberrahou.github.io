@@ -51,11 +51,19 @@
   #nb .out .html th, #nb .out .html td { border: 1px solid #e1e4e8; padding: 3px 8px; text-align: right; }
   @media (max-width: 640px) { #nb { padding: 14px; } #nb .prompt { display: none; } }
 
+  /* Video */
+  #video { position: relative; max-width: 1100px; margin: 20px auto; aspect-ratio: 16 / 9; background: #000; box-shadow: 0 1px 6px rgba(0,0,0,.3); }
+  #video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  #video .shield { position: absolute; top: 0; right: 0; width: 80px; height: 64px; }  /* hides Google Drive's "open in new window" button */
+
   @media print { body * { display: none !important; } body::after { content: "L'impression de ce document est désactivée."; display: block; } }
 </style>
 </head>
 <body oncontextmenu="return false;">
 <header>
+  <a href="/">Home</a>
+  <a href="/publications/">Publications</a>
+  <a href="/teaching/">Teaching</a>
   <a id="back" href="/teaching/">&larr; Retour au cours</a>
   <span class="title" id="title">Chargement…</span>
   <button id="zoomOut" class="pdfonly" title="Zoom arrière">&minus;</button>
@@ -66,6 +74,7 @@
 <div id="msg">Chargement du document…</div>
 <div id="pages"></div>
 <div id="nb" style="display:none"></div>
+<div id="video" style="display:none"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
@@ -79,21 +88,57 @@
   // Courses served by this viewer. "encoded" files are stored as .dat and decoded here.
   var COURSES = {
     idm: { dir: "/files/idm/", back: "/teaching/2026-fall-model-driven-engineering", encoded: false },
-    ml:  { dir: "/files/ml/",  back: "/teaching/2014-spring-teaching-1",            encoded: false }
+    ml:  { dir: "/files/ml/",  back: "/teaching/2014-spring-teaching-1",            encoded: false },
+    dl:  { dir: "/files/",     back: "/teaching/2026-fall-deep-learning",            encoded: false }
+  };
+  // Course videos, hosted on YouTube (unlisted) or Google Drive because they are too big for GitHub.
+  // Format: "yt:<YouTube video id>" or "gd:<Google Drive file id>". Leave "" until the video is online.
+  var VIDEOS = {
+    "dl-transfer-learning": ""
   };
   var KEY = new TextEncoder().encode("ensias-aissam-berrahou-viewer-2026");
 
+  // Links use an opaque parameter ?d=<base64url of "course|document|type|title">
+  // so that file names do not appear in the address bar. The older form
+  // ?c=<course>&doc=<file>&type=nb is still accepted.
   var params = new URLSearchParams(location.search);
-  var course = COURSES[params.get("c") || "idm"];
-  var doc = params.get("doc") || "";
-  var type = params.get("type") === "nb" ? "nb" : "pdf";
+  var cKey = params.get("c") || "idm", doc = params.get("doc") || "", type = params.get("type") || "pdf", title = "";
+  if (params.get("d")) {
+    try {
+      var b64 = params.get("d").replace(/-/g, "+").replace(/_/g, "/");
+      while (b64.length % 4) b64 += "=";
+      var bin = atob(b64), u8 = new Uint8Array(bin.length);
+      for (var j = 0; j < bin.length; j++) u8[j] = bin.charCodeAt(j);
+      var parts = new TextDecoder("utf-8").decode(u8).split("|");
+      cKey = parts[0]; doc = parts[1] || ""; type = parts[2] || "pdf"; title = parts[3] || "";
+    } catch (e) { doc = ""; }
+  }
+  if (type !== "nb" && type !== "video") type = "pdf";
+  var course = COURSES[cKey];
   var msg = document.getElementById("msg");
   var titleEl = document.getElementById("title");
 
-  if (!course || !/^[A-Za-z0-9_\-]+$/.test(doc)) { msg.textContent = "Document introuvable."; titleEl.textContent = ""; return; }
+  var docOk = /^[A-Za-z0-9_\-]+$/.test(doc);
+  if (!course || !docOk) { msg.textContent = "Document introuvable."; titleEl.textContent = ""; return; }
   document.getElementById("back").href = course.back;
-  titleEl.textContent = doc.replace(/_/g, " ");
+  titleEl.textContent = title || doc.replace(/_/g, " ");
+  document.title = (title || "Document") + " — Aissam Berrahou";
   if (type === "pdf") document.body.classList.add("pdf");
+
+  // ---------- Video (YouTube unlisted or Google Drive), embedded without download ----------
+  if (type === "video") {
+    var v = VIDEOS[doc] || "";
+    if (!/^(yt|gd):[A-Za-z0-9_\-]+$/.test(v)) { msg.textContent = "Cette vidéo n'est pas encore disponible."; return; }
+    var id = v.slice(3), box = document.getElementById("video");
+    var src = v.indexOf("yt:") === 0
+      ? "https://www.youtube-nocookie.com/embed/" + id + "?rel=0&modestbranding=1"
+      : "https://drive.google.com/file/d/" + id + "/preview";
+    box.innerHTML = '<iframe src="' + src + '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>' +
+                    (v.indexOf("gd:") === 0 ? '<div class="shield"></div>' : "");
+    box.style.display = "block"; msg.style.display = "none";
+    document.getElementById("pageInfo").textContent = "Vidéo";
+    return;
+  }
 
   var url = course.dir + doc + (course.encoded ? ".dat" : (type === "nb" ? ".ipynb" : ".pdf"));
 
