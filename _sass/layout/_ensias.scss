@@ -1,0 +1,117 @@
+/* ==========================================================================
+   ENSIAS LOOK
+   Navy header and footer, garnet accents. Colours come from
+   _sass/theme/_ensias_light.scss ($ensias-navy, $ensias-blue, $ensias-orange).
+   ========================================================================== */
+
+/* Header bar */
+.masthead {
+  background: $ensias-navy;
+  border-top: 4px solid $ensias-orange;
+
+  &::after { background: $ensias-orange; height: 2px; }
+}
+
+.masthead__menu-item,
+.greedy-nav,
+.greedy-nav button {
+  background-color: $ensias-navy;
+}
+
+.greedy-nav {
+  a { color: #fff; }
+  a:hover { color: $ensias-accent-light; }
+  button { color: #fff; }
+  .navicon,
+  .navicon:before,
+  .navicon:after { background: #fff; }
+
+  .visible-links a:before { background: $ensias-accent-light; }
+
+  .hidden-links {
+    background: $ensias-navy;
+    border-color: $ensias-orange;
+    &:before { border-color: $ensias-orange transparent; }
+    &:after { border-color: $ensias-navy transparent; }
+    li { border-bottom-color: rgba(255, 255, 255, 0.15); }
+    a:hover { background: mix(#fff, $ensias-navy, 12%); color: $ensias-accent-light; }
+  }
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: #fff;
+  border-bottom: 3px solid $ensias-accent-light;
+}
+
+/* Headings */
+.page__title,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__subtitle {
+  color: var(--ensias-heading-color);
+}
+
+.page__content h2 {
+  border-bottom: 2px solid $ensias-orange;
+  padding-bottom: 0.3em;
+}
+
+/* Teaching / publications lists */
+.archive__item-title a {
+  color: var(--ensias-heading-color);
+  &:hover { color: $ensias-orange; }
+}
+
+.archive__item {
+  border-left: 3px solid transparent;
+  padding-left: 0.8em;
+  transition: border-color 0.2s;
+  &:hover { border-left-color: $ensias-orange; }
+}
+
+/* Tables (lectures, labs, assignments) */
+.page__content table thead th,
+table thead th {
+  background: $ensias-navy;
+  color: #fff;
+  border-color: $ensias-navy;
+}
+
+.page__content table tbody tr:nth-child(even) {
+  background: mix(#fff, $ensias-navy, 95%);
+}
+
+html[data-theme="dark"] .page__content table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Course quick links (Home · Publications · Teaching) */
+.course-nav a {
+  font-weight: 600;
+}
+
+/* Sidebar */
+.author__name { color: var(--ensias-heading-color); }
+.author__urls a:hover { color: $ensias-orange; }
+
+/* Buttons */
+.btn--primary,
+.btn--info {
+  background-color: $ensias-navy;
+  &:hover { background-color: $ensias-orange; }
+}
+
+/* Footer */
+.page__footer {
+  background-color: $ensias-navy;
+  color: #dfe6f0;
+  border-top: 4px solid $ensias-orange;
+
+  a { color: #fff; }
+  a:hover { color: $ensias-accent-light; }
+  .page__footer-copyright,
+  .page__footer-follow a,
+  .page__footer-follow i { color: #dfe6f0; }
+}

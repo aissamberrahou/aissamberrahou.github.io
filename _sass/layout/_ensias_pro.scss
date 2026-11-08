@@ -1,0 +1,207 @@
+/* ==========================================================================
+   ENSIAS — PROFESSIONAL / INSTITUTIONAL LOOK
+   White header with a navy band, serif headings (Source Serif 4),
+   Inter for text, course cards, sober tables, navy footer.
+   Colours come from _sass/theme/_ensias_light.scss.
+   ========================================================================== */
+
+$pro-serif : "Source Serif 4", Georgia, "Times New Roman", serif;
+$pro-sans  : "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+$pro-line  : #e3e7ee;
+
+body { font-family: $pro-sans; }
+html { -webkit-font-smoothing: antialiased; }
+
+/* ---------- Header: navy band + white bar ---------- */
+.masthead {
+  background: #fff;
+  border-top: 6px solid $ensias-navy;
+  box-shadow: 0 2px 12px rgba(11, 46, 95, 0.08);
+
+  &::after {           /* thin orange accent line under the header */
+    height: 2px;
+    background: linear-gradient(90deg, $ensias-orange 0, $ensias-orange 120px, $pro-line 120px);
+  }
+}
+
+.masthead__menu-item,
+.greedy-nav,
+.greedy-nav button { background-color: #fff; }
+
+.greedy-nav {
+  a {
+    color: $ensias-navy;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+  a:hover { color: $ensias-orange; }
+  .visible-links a:before { background: $ensias-orange; height: 3px; }
+  .visible-links li:first-child a {
+    font-family: $pro-serif;
+    font-size: 1.25em;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  .navicon, .navicon:before, .navicon:after { background: $ensias-navy; }
+  .hidden-links a:hover { background: mix(#fff, $ensias-navy, 94%); }
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: $ensias-navy;
+  font-weight: 700;
+  border-bottom: 3px solid $ensias-orange;
+}
+
+/* ---------- Typography ---------- */
+.page__title,
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.archive__subtitle,
+.author__name {
+  font-family: $pro-serif;
+  color: var(--ensias-heading-color);
+  font-weight: 700;
+}
+
+.page__title {
+  font-size: 2.1em;
+  margin-bottom: 0.4em;
+  &::after {          /* short garnet bar under the page title */
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin-top: 0.35em;
+    background: $ensias-orange;
+    border-radius: 2px;
+  }
+}
+
+.page__content h2 {
+  font-size: 1.45em;
+  margin-top: 1.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid $pro-line;
+}
+
+.page__content h3 { font-size: 1.15em; }
+
+.page__content a,
+.archive a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(28, 90, 166, 0.25);
+  &:hover { border-bottom-color: $ensias-orange; }
+}
+
+/* ---------- Teaching / publications list as cards ---------- */
+.archive .list__item {
+  margin-bottom: 1.1em;
+}
+
+.archive .archive__item {
+  position: relative;
+  background: var(--global-bg-color);
+  border: 1px solid $pro-line;
+  border-left: 4px solid $ensias-navy;
+  border-radius: 6px;
+  padding: 1.1em 1.4em 0.6em;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+
+  &:hover {
+    border-left-color: $ensias-orange;
+    box-shadow: 0 6px 20px rgba(11, 46, 95, 0.10);
+    transform: translateY(-1px);
+  }
+
+  p { margin: 0.35em 0; }
+  > p:first-of-type {            /* type, institution, year */
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #6b7686;
+  }
+}
+
+.archive__item-title {
+  font-family: $pro-serif;
+  margin-top: 0;
+  a {
+    color: var(--ensias-heading-color);
+    border-bottom: none !important;
+    &:hover { color: $ensias-orange; }
+  }
+}
+
+/* ---------- Tables ---------- */
+.page__content table {
+  border-collapse: collapse;
+  border: none;
+  font-size: 0.9em;
+}
+
+.page__content table thead th {
+  background: mix(#fff, $ensias-navy, 93%);
+  color: $ensias-navy;
+  font-size: 0.82em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  border-bottom: 2px solid $ensias-navy;
+  padding: 0.7em 0.8em;
+}
+
+.page__content table td {
+  border: none;
+  border-bottom: 1px solid $pro-line;
+  padding: 0.65em 0.8em;
+}
+
+.page__content table tbody tr:hover { background: mix(#fff, $ensias-orange, 94%); }
+
+html[data-theme="dark"] {
+  .page__content table thead th { background: rgba(255, 255, 255, 0.06); color: #fff; border-bottom-color: $ensias-accent-light; }
+  .page__content table tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
+  .masthead, .masthead__menu-item, .greedy-nav, .greedy-nav button { background: #0f1b2e; }
+  .greedy-nav a, .masthead__menu-item.selected a { color: #fff; }
+  .archive .archive__item { border-color: rgba(255, 255, 255, 0.12); border-left-color: $ensias-accent-light; }
+  .greedy-nav a:hover, .archive__item-title a:hover { color: $ensias-accent-light; }
+}
+
+/* ---------- Course quick links ---------- */
+.course-nav {
+  display: inline-block;
+  background: mix(#fff, $ensias-navy, 95%);
+  border-radius: 999px;
+  padding: 0.35em 1em;
+  a { font-weight: 600; border-bottom: none !important; }
+}
+
+/* ---------- Sidebar ---------- */
+.author__avatar img { border: 3px solid #fff; box-shadow: 0 0 0 2px $ensias-navy; }
+.author__urls a:hover { color: $ensias-orange; }
+
+/* ---------- Buttons ---------- */
+.btn--primary,
+.btn--info {
+  background-color: $ensias-navy;
+  border-radius: 4px;
+  &:hover { background-color: $ensias-orange; }
+}
+
+/* ---------- Footer ---------- */
+.page__footer {
+  background-color: $ensias-navy;
+  color: #c9d3e2;
+  border-top: none;
+  box-shadow: inset 0 4px 0 mix(#fff, $ensias-orange, 15%);
+  font-size: 0.85em;
+
+  a { color: #fff; border-bottom: none; }
+  a:hover { color: $ensias-accent-light; }
+  .page__footer-copyright,
+  .page__footer-follow a,
+  .page__footer-follow i { color: #c9d3e2; }
+}
