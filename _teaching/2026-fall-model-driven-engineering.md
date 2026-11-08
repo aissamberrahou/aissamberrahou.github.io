@@ -44,7 +44,7 @@ By the end of the course, students will be able to:
 
 ## Course
 
-Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes (PDF, *coming soon*).
+Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes [PDF](/viewer/?doc=support2027).
 
 |    | Lecture | Slides |
 |:---|:--------|:-------|
