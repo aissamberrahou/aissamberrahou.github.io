@@ -11,7 +11,7 @@ location: "Rabat, Morocco"
 
 This introductory machine learning course covers the main supervised methods (KNN, linear regression, SVM), how to validate and evaluate a model, and the main clustering methods (K-means, hierarchical agglomerative clustering, DBSCAN). Every lecture comes with a hands-on lab in Python and scikit-learn.
 
-<img width="333" height="338" alt="image" src="https://github.com/user-attachments/assets/c4c8b148-8276-48c6-9fd1-a6ce1fca999b" />
+
 
 ## Description
 
