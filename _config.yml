@@ -8,7 +8,8 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "ensias" # The available themes options are "ensias", "default", "air", "sunrise", "mint", "dirt" and "contrast"
+ensias_style             : "ensias_pro" # "ensias_pro" (white header, institutional) or "ensias" (navy header)
 title                    : ""
 title_separator          : "-"
 name                     : &name ""
@@ -166,6 +167,9 @@ include:
   - _pages
   - files
 exclude:
+  - scripts
+  - markdown_generator
+  - "*.py"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

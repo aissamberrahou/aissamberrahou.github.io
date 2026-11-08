@@ -1,6 +1,5 @@
 User-agent: *
-Disallow: /files/idm/
-Disallow: /files/ml/
+Disallow: /files/
 Disallow: /viewer/
 
 Sitemap: https://aissamberrahou.github.io/sitemap.xml
