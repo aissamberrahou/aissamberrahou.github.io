@@ -1,7 +1,7 @@
 ---
 title: "C# programming"
 collection: teaching
-order: 5
+order: 6
 type: "Undergraduate course"
 permalink: /teaching/2026-fall-csharp-programming
 venue: "Ensias, Mohammed V University"

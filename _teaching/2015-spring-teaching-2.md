@@ -1,6 +1,7 @@
 ---
 title: "Teaching experience 2"
 collection: teaching
+published: false
 order: 8
 type: "Workshop"
 permalink: /teaching/2015-spring-teaching-1

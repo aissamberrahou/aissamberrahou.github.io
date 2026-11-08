@@ -1,7 +1,7 @@
 ---
 title: "Edge AI: artificial intelligence on embedded devices"
 collection: teaching
-order: 6
+order: 4
 type: "Graduate course"
 permalink: /teaching/2026-fall-edge-ai
 venue: "Ensias, Mohammed V University"
