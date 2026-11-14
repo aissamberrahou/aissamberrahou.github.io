@@ -11,7 +11,7 @@ redirect_from:
 
 * **Coordinator of the SSE engineering programme** (Smart Systems Engineering), 2021–2026
 * **Coordinator of the ISI engineering programme** (Intelligent Systems Engineering), since 2025
-* **Coordinator of the S2I Master's programme** (Smart Industrial Systems), since 2026
+* **Coordinator of the S2I Master's programme** (Intelligent Industrial Systems), since 2026
 
 ## About me
 
