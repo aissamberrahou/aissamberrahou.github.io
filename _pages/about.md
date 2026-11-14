@@ -7,6 +7,14 @@ redirect_from:
   - /about.html
 ---
 
+## Responsibilities
+
+* **Coordinator of the SSE engineering programme** (Smart Systems Engineering), 2021–2026
+* **Coordinator of the ISI engineering programme** (Intelligent Systems Engineering), since 2025
+* **Coordinator of the S2I Master's programme** (Smart Industrial Systems), since 2026
+
+## About me
+
 I am an Associate Professor at the National School of Computer Science and Systems Analysis (ENSIAS), Mohammed V University in Rabat, Morocco. My teaching and research activities focus on Embedded Systems, Artificial Intelligence, Computer vision, Edge AI, and Intelligent Industrial Systems.
 
 My teaching covers several areas, including Embedded Systems, Microcontroller Programming, Data Structures, Object-Oriented Programming, Model-Driven Engineering, and Artificial Intelligence, with a strong emphasis on combining theoretical foundations with practical, hands-on laboratory activities.
