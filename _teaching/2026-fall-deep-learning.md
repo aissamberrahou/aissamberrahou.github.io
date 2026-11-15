@@ -19,7 +19,18 @@ The course is built around Jupyter notebooks so you can experiment with every mo
 - Linear algebra, basic calculus and probability
 
 ## Lectures
-Lectures are available as slides (in French), displayed in a read-only online viewer, and some come with a video. Each lecture has a recommended reading from the free book *Dive into Deep Learning*. The full course notes (in French, 10 chapters with exercises and solutions) are available here: [Course notes](/viewer/?d=ZGx8U3VwcG9ydF9EZWVwTGVhcm5pbmd8cGRmfERlZXAgbGVhcm5pbmcg4oCUIGNvdXJzZSBub3Rlcw).
+### Course notes and corrected exams
+
+Both documents are in French and displayed in a read-only online viewer.
+
+| Document | Description | Read |
+|:---|:---|:---|
+| Course notes (polycopié) | 10 chapters with exercises and solutions | [Read online](/viewer/?d=ZGx8U3VwcG9ydF9EZWVwTGVhcm5pbmd8cGRmfERlZXAgbGVhcm5pbmcg4oCUIGNvdXJzZSBub3Rlcw) |
+| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=ZGx8RXhhbWVuc19jb3JyaWdlc19ETHxwZGZ8RGVlcCBsZWFybmluZyDigJQgY29ycmVjdGVkIGV4YW1z) |
+
+### Slides
+
+Lectures are available as slides (in French), displayed in a read-only online viewer, and some come with a video. Each lecture has a recommended reading from the free book *Dive into Deep Learning*.
 
 |    | Course                                   | Slides | Video | Reading |
 |:---|:-----------------------------------------|--------|-------|-----------|

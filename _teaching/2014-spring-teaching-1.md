@@ -44,6 +44,17 @@ By the end of the course, students will be able to:
 
 ## Course
 
+### Course notes and corrected exams
+
+Both documents are in French and displayed in a read-only online viewer.
+
+| Document | Description | Read |
+|:---|:---|:---|
+| Course notes (polycopié) | The full course in one document, with examples and exercises | [Read online](/viewer/?d=bWx8UG9seWNvcGllX01MfHBkZnxNYWNoaW5lIGxlYXJuaW5nIOKAlCBjb3Vyc2Ugbm90ZXM) |
+| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=bWx8RXhhbWVuc19jb3JyaWdlc19NTHxwZGZ8TWFjaGluZSBsZWFybmluZyDigJQgY29ycmVjdGVkIGV4YW1z) |
+
+### Lectures
+
 Lectures are available as slides (in French), displayed in a read-only online viewer.
 
 ||Lecture|Slides|

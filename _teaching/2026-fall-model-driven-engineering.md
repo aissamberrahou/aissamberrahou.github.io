@@ -45,7 +45,18 @@ By the end of the course, students will be able to:
 
 ## Course
 
-Lectures are available as slides (in French), displayed in a read-only online viewer. The full course notes (in French, with numbered examples, exercises, quizzes and fully worked solutions, plus a syntax cheat sheet for OCL, Acceleo, the EMF API and ATL) will be available here: Course notes [PDF](/viewer/?d=aWRtfHN1cHBvcnQyMDI3fHBkZnxzdXBwb3J0MjAyNw).
+### Course notes and corrected exams
+
+Both documents are in French and displayed in a read-only online viewer.
+
+| Document | Description | Read |
+|:---|:---|:---|
+| Course notes (polycopié) | *Ingénierie Dirigée par les Modèles : du modèle au code*, with exercises, quizzes, worked solutions and a cheat sheet | [Read online](/viewer/?d=aWRtfHN1cHBvcnQyMDI3fHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvdXJzZSBub3Rlcw) |
+| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=aWRtfEV4YW1lbnNfY29ycmlnZXNfSURNfHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvcnJlY3RlZCBleGFtcw) |
+
+### Lectures
+
+Lectures are available as slides (in French), displayed in a read-only online viewer.
 
 |    | Lecture | Slides |
 |:---|:--------|:-------|

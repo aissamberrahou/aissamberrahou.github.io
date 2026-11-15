@@ -62,6 +62,17 @@ By the end of the course, students will be able to:
 
 ## Course
 
+### Course notes and corrected exams
+
+Both documents are in French and displayed in a read-only online viewer.
+
+| Document | Description | Read |
+|:---|:---|:---|
+| Course notes (polycopié) | The full course in one document, following the EcoTri 4.0 sessions | [Read online](/viewer/?d=ZWRnZXxQb2x5Y29waWVfRWRnZUFJfHBkZnxFZGdlIEFJIOKAlCBjb3Vyc2Ugbm90ZXM) |
+| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=ZWRnZXxFeGFtZW5zX2NvcnJpZ2VzX0VkZ2VBSXxwZGZ8RWRnZSBBSSDigJQgY29ycmVjdGVkIGV4YW1z) |
+
+### Lectures
+
 Each session combines a lecture, a tutorial and a lab around one sub-project (SP) of the EcoTri 4.0 station. Slides and tutorials (in French) are displayed in a read-only online viewer. The tutorials guide you step by step on the Portenta H7 with OpenMV and prepare the lab.
 
 |    | Session | Main theory | Milestone | Slides | Tutorial |
