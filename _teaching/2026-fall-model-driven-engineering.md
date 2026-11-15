@@ -2,10 +2,8 @@
 title: "Model-driven engineering (IDM/MDA)"
 collection: teaching
 order: 3
-type: "Graduate course"
 permalink: /teaching/2026-fall-model-driven-engineering
-venue: "Ensias, Mohammed V University"
-date: 2026-09-20
+date: 2021-09-20
 location: "Rabat, Morocco"
 ---
 
