@@ -2,7 +2,6 @@
 title: "Deep learning"
 collection: teaching
 order: 2
-type: "Graduate course"
 permalink: /teaching/2026-fall-deep-learning
 venue: "Ensias, Mohammed V University"
 date: 2026-10-01
