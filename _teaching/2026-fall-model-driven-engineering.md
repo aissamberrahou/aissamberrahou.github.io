@@ -47,10 +47,10 @@ By the end of the course, students will be able to:
 
 Both documents are in French and displayed in a read-only online viewer.
 
-| Document | Description | Read |
+| Document | Description | Link |
 |:---|:---|:---|
-| Course notes (polycopié) | *Ingénierie Dirigée par les Modèles : du modèle au code*, with exercises, quizzes, worked solutions and a cheat sheet | [Read online](/viewer/?d=aWRtfHN1cHBvcnQyMDI3fHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvdXJzZSBub3Rlcw) |
-| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=aWRtfEV4YW1lbnNfY29ycmlnZXNfSURNfHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvcnJlY3RlZCBleGFtcw) |
+| Course notes (polycopié) | *Ingénierie Dirigée par les Modèles : du modèle au code*, with exercises, quizzes, worked solutions and a cheat sheet | [PDF](/viewer/?d=aWRtfHN1cHBvcnQyMDI3fHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvdXJzZSBub3Rlcw) |
+| Corrected exams | Past exam papers with fully worked solutions | [PDF](/viewer/?d=aWRtfEV4YW1lbnNfY29ycmlnZXNfSURNfHBkZnxNb2RlbC1kcml2ZW4gZW5naW5lZXJpbmcg4oCUIGNvcnJlY3RlZCBleGFtcw) |
 
 ### Lectures
 
