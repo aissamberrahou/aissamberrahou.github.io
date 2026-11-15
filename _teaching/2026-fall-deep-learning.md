@@ -23,10 +23,10 @@ The course is built around Jupyter notebooks so you can experiment with every mo
 
 Both documents are in French and displayed in a read-only online viewer.
 
-| Document | Description | Read |
+| Document | Description | Link |
 |:---|:---|:---|
-| Course notes (polycopié) | 10 chapters with exercises and solutions | [Read online](/viewer/?d=ZGx8U3VwcG9ydF9EZWVwTGVhcm5pbmd8cGRmfERlZXAgbGVhcm5pbmcg4oCUIGNvdXJzZSBub3Rlcw) |
-| Corrected exams | Past exam papers with fully worked solutions | [Read online](/viewer/?d=ZGx8RXhhbWVuc19jb3JyaWdlc19ETHxwZGZ8RGVlcCBsZWFybmluZyDigJQgY29ycmVjdGVkIGV4YW1z) |
+| Course notes (polycopié) | 10 chapters with exercises and solutions | [PDF](/viewer/?d=ZGx8U3VwcG9ydF9EZWVwTGVhcm5pbmd8cGRmfERlZXAgbGVhcm5pbmcg4oCUIGNvdXJzZSBub3Rlcw) |
+| Corrected exams | Past exam papers with fully worked solutions | [PDF](/viewer/?d=ZGx8RXhhbWVuc19jb3JyaWdlc19ETHxwZGZ8RGVlcCBsZWFybmluZyDigJQgY29ycmVjdGVkIGV4YW1z) |
 
 ### Slides
 
