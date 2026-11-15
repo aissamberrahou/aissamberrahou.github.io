@@ -2,9 +2,7 @@
 title: "Machine learning"
 collection: teaching
 order: 1
-type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "Ensias, Mohammed V University"
 date: 2021-01-01
 location: "Rabat, Morocco"
 ---
